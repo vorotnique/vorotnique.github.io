@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #b5ff9e;
+	font-size: 2rem;
+	font-family: 'Marmelad', sans-serif;
+}
+
+header {
+	width: 100%;
+	min-width: 320px;
+	padding: 22px;
+	text-align: center;
+}
+
+header img {
+	padding: 9px;
+	border-radius: 100%;
+}
+
+h3 {
+	display: inline-block;
+	background-color: #74b360;
+	color: white;
+	padding: 9px;
+	border: 2px solid white;
+	border-radius: 9px;
+}
+
+ul {
+	display: block;
+	font-size: 1.1rem;
+	padding-bottom: 22px;
+	margin: auto;
+	width: 9%;
+}
