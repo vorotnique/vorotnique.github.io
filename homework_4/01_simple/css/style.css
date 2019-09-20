@@ -1,0 +1,46 @@
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	display: inline-block;
+	background-color: #a52a2a;
+	text-align: center;
+	color: white;
+	width: 100%;
+}
+
+body {
+	font-size: 18px;
+}
+
+main {
+	display: block;
+	width: 55%;
+	margin: 0 auto;
+}
+
+.sunset img {
+	width: 100%;
+}
+
+span {
+	color: blue;
+}
+
+.cars img {
+	border: 3px dashed black;
+}
+
+.cars {
+	text-align: center;
+}
+
+.copyright p {
+	display: inline-block;
+	background-color: black;
+	text-align: center;
+	color: white;
+	width: 100%;
+	font-size: 20px;
+}

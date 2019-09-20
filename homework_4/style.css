@@ -1,0 +1,38 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #edcc47;
+	font-size: 100%;
+	font-family: sans-serif;
+}
+
+nav {
+	text-align: center;
+	padding-top: 2rem;
+}
+
+a {
+	display: inline-block;
+	width: 100%;
+	max-width: 333px;
+	min-width: 333px;
+	text-align: center;
+	border: 2px solid #fff957;
+	border-radius: 5px;
+	background-color: #fff957;
+	padding: 33px;
+	font-weight: bold;
+	font-size: 2rem;
+	text-decoration: none;
+	color: #000;
+	box-shadow: 2px 2px 17px 0px black;
+	transition: all .5s ease;
+	margin: 55px;
+}
+
+a:hover {
+	background-color: #eda240;
+	border-color: currentColor;
+}
