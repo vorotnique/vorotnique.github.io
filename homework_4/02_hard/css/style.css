@@ -13,13 +13,16 @@ header {
 }
 
 header a {
+	display: block;
 	text-decoration: none;
+	text-transform: capitalize;
 }
 
 nav {
 	background-color: black;
 	width: 98%;
 	margin: 0 auto;
+	padding: 20px 0 0;
 }
 
 li {
@@ -31,12 +34,12 @@ figcaption {
 	font-size: 18px;
 }
 
-nav a {
-	padding: 22px;
+nav img {
+	width: 222px;
 }
 
-nav img {
-	width: 66%;
+nav li:not(:last-child) {
+	margin-right: 80px;
 }
 
 .columns {

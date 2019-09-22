@@ -1,0 +1,65 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-size: 100%;
+	font-family: sans-serif;
+	background-color: #990909;
+	color: white;
+}
+
+.main-header {
+	text-align: center;
+	padding: 9px 0 5px;
+}
+
+.main-header__link {
+	display: inline-block;
+	font-size: 0;
+}
+
+.navigation {
+	background-color: black;
+	padding: 20px 0 0;
+	text-align: center;
+}
+
+.navigation__list-item {
+	display: inline-block;
+}
+
+.navigation__list-item:not(:last-child) {
+	margin-right: 80px;
+}
+
+.navigation__list-link {
+	display: block;
+	font-size: 0;
+	text-decoration: none;
+}
+
+.navigation__figcaption {
+	font-size: 1.2rem;
+	color: white;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+li img {
+	max-width: 250px;
+}
+
+/* #990909 - page bgred
+#7d0909 - aside bgred
+#bdbdbd - dark grey
+#e3dddd - light grey
+#000000 - black
+#ffffff - white
+#e95b11 - orange */
