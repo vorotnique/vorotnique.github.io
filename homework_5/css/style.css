@@ -6,10 +6,6 @@
 
 body {
 	background-color: #121116;
-	background-image: url(../img/grid.jpg)
-	/* Хелло, май нейм из Уджавал!
-	Разрешение картинки - 100 x 1, размер - 8,34 КБ,
-	но можно эту единственную строчку просто убрать */
 }
 
 footer {
@@ -27,13 +23,14 @@ footer {
 .logo__link {
 	display: inline-block;
 	font-size: 0;
+	margin-bottom: 33px;
 }
 
 .weare {
 	text-transform: uppercase;
-	padding: 33px 0 22px;
 	font-size: 22px;
 	position: relative;
+	padding-bottom: 22px;
 }
 
 .weare::after {
@@ -44,10 +41,12 @@ footer {
     bottom: 0;
     left: 50%;
     transform: translate(-50%);
+    margin-top: 22px;
 }
 
 ul {
-	padding: 22px;
+	padding-top: 22px;
+	margin-bottom: 55px;
 }
 
 li {
@@ -58,8 +57,9 @@ li {
 li a {
 	display: inline-block;
 	border-radius: 50%;
-	width: 16px;
-	height: 16px;
+	width: 22px;
+	height: 22px;
+	padding: 4px;
 }
 
 li a:hover {
@@ -68,11 +68,10 @@ li a:hover {
 }
 
 li:not(:last-child) {
-	margin-right: 36px;
+	margin-right: 16px;
 }
 
 p {
-	padding-top: 55px;
 	text-transform: capitalize;
 }
 
