@@ -1,0 +1,82 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #121116;
+	background-image: url(../img/grid.jpg)
+	/* Хелло, май нейм из Уджавал!
+	Разрешение картинки - 100 x 1, размер - 8,34 КБ,
+	но можно эту единственную строчку просто убрать */
+}
+
+footer {
+	padding: 150px 0;
+	text-align: center;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+	display: block;
+	margin: 0 auto;
+}
+
+.logo__link {
+	display: inline-block;
+	font-size: 0;
+}
+
+.weare {
+	text-transform: uppercase;
+	padding: 33px 0 22px;
+	font-size: 22px;
+	position: relative;
+}
+
+.weare::after {
+	content: "";
+    border: 0.5px solid white;
+    width: 230px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+ul {
+	padding: 22px;
+}
+
+li {
+	display: inline-block;
+	font-size: 0;
+}
+
+li a {
+	display: inline-block;
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+}
+
+li a:hover {
+	background-color: #19c8fa;
+	transition: .5s ease;
+}
+
+li:not(:last-child) {
+	margin-right: 36px;
+}
+
+p {
+	padding-top: 55px;
+	text-transform: capitalize;
+}
+
+a {
+	color: #19c8fa;
+	text-decoration: none;
+}
