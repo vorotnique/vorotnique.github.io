@@ -17,32 +17,35 @@ header {
 	padding: 15px;
 }
 
-h1 {
+.main_header {
 	margin-bottom: 9px;
 }
 
-form {
+.shopping_form {
+	display: block;
 	padding: 33px 0;
+	width: 44%;
+	margin: 0 auto;
 }
 
-ul {
+.shopping_list {
 	display: block;
 	list-style: none;
 	margin: 0 auto 22px;
-	width: 44%;
 }
 
-li {
+.item_block {
+	display: block;
 	background-color: #85849a;
 	padding: 11px;
 	height: 44px;
 }
 
-li:nth-child(2n) {
+.list_item:nth-child(2n) .item_block {
 	background-color: #6e6d83;
 }
 
-li:hover {
+.item_block:hover {
 	background-color: #5f6174;
 	border-top: 2px solid white;
 	border-bottom: 2px solid white;
@@ -50,11 +53,11 @@ li:hover {
 	padding: 9px 11px;
 }
 
-li:active {
+.item_block:active {
 	background-color: #ef887a;
 }
 
-[type="checkbox"]:checked + span {
+[type="checkbox"]:checked ~ span {
 	text-decoration: line-through;
 	color: white;
 }
@@ -85,8 +88,8 @@ span, p {
 
 [type="submit"] {
 	display: block;
-	width: 44%;
 	height: 33px;
+	width: 99px;
 	text-align: center;
 	margin: 0 auto;
 	text-transform: uppercase;
