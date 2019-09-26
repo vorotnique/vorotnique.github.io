@@ -89,7 +89,7 @@ span, p {
 [type="submit"] {
 	display: block;
 	height: 33px;
-	width: 99px;
+	width: 100%;
 	text-align: center;
 	margin: 0 auto;
 	text-transform: uppercase;
