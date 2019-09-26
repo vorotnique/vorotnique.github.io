@@ -1,0 +1,131 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #2793cb;
+	color: white;
+	font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+}
+
+h1 {
+	display: inline-block;
+	margin-bottom: 9px;
+	font-size: 2rem;
+}
+
+.forecast {
+	width: 55%;
+	min-width: 320px;
+	margin: 0 auto;
+	padding: 22px 0 0;
+}
+
+.forecast_tab {
+	font-size: 0;
+	border: 2px solid white;
+	margin-bottom: 22px;
+}
+
+.average_tab, .small_tab, .big_tab {
+	display: inline-block;
+	border: 2px solid white;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.city {
+	text-transform: capitalize;
+	margin-bottom: 9px;
+}
+
+.temperature {
+	display: inline-block;
+	margin-right: 9px;
+}
+
+.average_tab {
+	width: 50%;
+}
+
+.small_tab {
+	width: 25%;
+}
+
+.big_tab {
+	width: 100%;
+}
+
+.average_tab a, .small_tab a, .big_tab a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-size: 1.2rem;
+	padding: 11px;
+}
+
+.average_tab a:hover, .small_tab a:hover, .big_tab a:hover {
+	opacity: 0.5;
+}
+
+.conclusion {
+	font-size: 1.1rem;
+}
+
+.link_curiousblue {
+	background-color: #2793cb;
+}
+
+.link_java {
+	background-color: #24bdc7;
+}
+
+.link_mountbattenpink {
+	background-color: #986f95;
+}
+
+.link_mojo {
+	background-color: #c75442;
+}
+
+.link_burntsienna {
+	background-color: #e77144;
+}
+
+.link_goldentainoi {
+	background-color: #ffcb5d;
+}
+
+.link_norway {
+	background-color: #94c396;
+}
+
+.link_patina {
+	background-color: #5e9494;
+}
+
+.link_charm {
+	background-color: #cf7294;
+}
+
+.link_eucalyptus {
+	background-color: #2b8c63;
+}
+
+.link_kimberly {
+	background-color: #636996;
+}
+
+/* #2793cb - background and 1st element (Curious Blue)
+#24bdc7 - 2nd (Java)
+#986f95 - 3rd (Mountbatten Pink)
+#c75442 - 4th (Mojo)
+#e77144 - 5th (Burnt Sienna)
+#ffcb5d - 6th (Golden Tainoi)
+#94c396 - 7th (Norway)
+#5e9494 - 8th (Patina)
+#cf7294 - 9th (Charm)
+#2b8c63 - 10th (Eucalyptus)
+#636996 - 11th (Kimberly) */
