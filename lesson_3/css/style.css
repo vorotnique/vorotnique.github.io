@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-size: 100%;
+	font-family: sans-serif;
+	color: black;
+	padding-top: 20px;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form {
+	margin-bottom: 2rem;
+}
+
+.form__list {
+	list-style: none;
+}
+
+.form__label {
+	padding: 10px;
+	display: block;
+	background-color: blue;
+}
+
+.form__item:nth-child(odd) .form__label {
+	background-color: green;
+}
+
+.form__check {
+	display: none;
+}
+
+.form__check:checked ~ .form__text::before {
+	content: "";
+	display: block;
+	width: 100%;
+	border-top: 3px solid currentcolor;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.form__text {
+	color: white;
+	font-size: 2rem;
+	display: inline-block;
+	position: relative;
+}
+
+.fake-label {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin-right: 1rem;
+	border-radius: 15px;
+	background-color: white;
+}
+
+.form__check:checked + .fake-label {
+	border-radius: 50%;
+	background-color: red;
+	transition: all .3s ease;
+}
+
+.target {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: black;
+
+	box-shadow: 0 0 0 40px red,
+	0 0 0 80px blue,
+	0 0 0 120px green,
+	0 0 0 160px yellow;
+
+	position: relative;
+}
