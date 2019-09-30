@@ -17,7 +17,6 @@ h1 {
 }
 
 .forecast {
-	min-width: 320px;
 	max-width: 880px;
 	margin: 0 auto;
 	padding: 22px 0 0;
@@ -32,7 +31,6 @@ h1 {
 
 .average_tab, .small_tab, .big_tab {
 	display: inline-block;
-	border: 2px solid white;
 }
 
 .city {
@@ -63,10 +61,13 @@ h1 {
 	color: white;
 	font-size: 1.2rem;
 	padding: 11px;
+	border: 2px solid white;
+	opacity: 0.5;
 }
 
 .average_tab a:hover, .small_tab a:hover, .big_tab a:hover {
-	opacity: 0.5;
+	opacity: 1;
+	transition: all .2s ease-in;
 }
 
 .conclusion {

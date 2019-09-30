@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-size: 100%;
+	font-family: sans-serif;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.coffee {
+	background-color: #fdde7e;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.coffee__list {
+	display: flex;
+	justify-content: space-around;
+}
+
+.coffee__link {
+	background-color: white;
+	color: #333;
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 440px;
+}
+
+.coffee__link.gold {
+	min-height: 
+}
