@@ -44,12 +44,15 @@ body {
 }
 
 .blog__main-link {
-	display: block;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-content: flex-end;
 	width: 100%;
 	min-width: 740px;
 	max-width: 740px;
 	height: 540px;
-	padding: 30px;
 	background: url(../img/main.png) no-repeat;
 	text-decoration: none;
 	color: white;
@@ -75,13 +78,13 @@ body {
 }
 
 .blog__title {
-	font-size: 30px;
+	font-size: 23px;
 	line-height: 1.1;
 	text-transform: uppercase;
 }
 
 .blog__date {
-	font-size: 16px;
+	font-size: 10px;
 	text-transform: uppercase;
 	color: #a2a09c;
 }
@@ -89,15 +92,11 @@ body {
 .blog__main-footer {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	align-content: space-between;
-	position: absolute;
-	bottom: 0;
-	left: 0;
+	justify-content: space-around;
 	padding: 30px;
 	width: 100%;
-	height: 25%;
-	background-image: linear-gradient(0deg, black 0%, transparent 100%);
+	height: 30%;
+	background: linear-gradient(to top, rgba(0,0,0,255) 0%, rgba(0,0,0,0) 100%);
 }
 
 .blog__footer {
@@ -118,12 +117,13 @@ body {
 	text-align: center;
 	color: #a2a09c;
 	text-transform: uppercase;
-	font-size: 25px;
+	font-size: 10px;
 	padding-bottom: 33px;
 }
 
 .loading img {
-	margin-right: 15px;
+	width: 11px;
+	margin-right: 5px;
 	filter: invert(44%);
 	animation: 1s linear 0s normal none infinite running rotate_animation;
 }
