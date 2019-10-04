@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-size: 100%;
+}
+
+.container {
+	padding: 55px 0;
+}
+
+.text-area {
+	width: 96%;
+	box-shadow: 0 0 15px 0 gray;
+	margin: 0 auto;
+	padding: 77px 55px;
+}
+
+.header {
+	text-transform: capitalize;
+	font-family: 'Playfair Display', serif;
+	color: black;
+	margin-bottom: 22px;
+}
+
+.text {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	color: gray;
+	line-height: 2;
+	margin-bottom: 22px;
+}
+
+.beginning::first-letter {
+	font-size: 76px;
+	font-family: 'Playfair Display', serif;
+	color: black;
+	float: left;
+	margin-right: 11px;
+	line-height: 0.8;
+}
+
+.quote {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 22px;
+	color: gray;
+	margin-bottom: 33px;
+}
+
+.quote::before {
+	content: "''";
+	font-size: 55px;
+	font-family: 'Playfair Display', serif;
+	margin-right: 9px;
+	line-height: .5;
+}
+
+.button {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	text-decoration: none;
+	color: #eaa258;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	padding: 11px 33px;
+	border: 1px solid #eaa258;
+}
+
+.button:hover {
+	color: white;
+	background-color: #eaa258;
+	transition: all .7s ease;
+}
