@@ -1,0 +1,134 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 100%;
+	font-family: 'Raleway', sans-serif;
+	background: url(../img/background.jpg) no-repeat;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.header {
+	display: block;
+	padding: 50px 15px;
+	color: black;
+	height: 100vh;
+
+	&__logo {
+		display: inline-block;
+		font-size: 0;
+	}
+
+	&__nav {
+		display: inline-block;
+		float: right;
+		width: 550px;
+	}
+
+	&__nav-list {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-content: center;
+		list-style: none;
+	}
+
+	&__nav-link {
+		text-decoration: none;
+		text-transform: uppercase;
+		color: black;
+		font-weight: 700;
+		position: relative;
+	}
+
+	&__nav-link:hover::before{
+		content: "";
+		position: absolute;
+		top: -10px;
+		border: 2px solid #ff6033;
+		width: 100%;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		height: 70vh;
+		width: 30vw;
+	}
+
+	&__info-main {
+		font-weight: 900;
+		font-size: 32px;
+		text-transform: capitalize;
+		margin-bottom: 20px;
+	}
+
+	&__info-caption {
+		font-weight: 300;
+		font-size: 14px;
+		margin-bottom: 20px;
+		line-height: 1.5;
+	}
+
+	&__info-link {
+		display: block;
+		padding: 15px;
+		background-color: #ff6033;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 300;
+		color: white;
+		box-shadow: 1px 1px 3px 1px black;
+	}
+
+	&__info-link:hover {
+		background-color: white;
+		color: #ff6033;
+		transition: all .5s ease;
+	}
+
+	&__scroll {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.main {
+	padding: 50px 15px;
+	background-color: #00bcbc;
+	color: white;
+
+	&__about {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	&__info {
+		width: 30vw;
+	}
+
+	&__info-header {
+		font-weight: 700;
+		font-size: 48px;
+		text-transform: capitalize;
+		margin-bottom: 20px;
+	}
+
+	&__info-caption {
+		font-weight: 300;
+		font-size: 16px;
+		margin-bottom: 20px;
+		line-height: 1.5;
+	}
+}
