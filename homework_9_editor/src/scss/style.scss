@@ -13,15 +13,20 @@ body {
 	background-color: #464f54;
 }
 
+.container {
+	width: 100%;
+	max-width: 1060px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
 .editor {
 	margin: 0 auto;
 	padding-top: 99px;
 
 	&__sheet {
-		max-width: 1060px;
 		max-height: 750px;
 		background-color: white;
-		margin: 0 auto;
 		padding: 200px 125px 33px;
 		position: relative;
 	}
@@ -75,19 +80,24 @@ body {
 	&__sheet-article:not(:last-child) {
 		margin-bottom: 22px;
 	}
+}
+
+.sidebars {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	position: absolute;
+	top: 50px;
+	right: 0;
 
 	&__title {
 		display: flex;
 		flex-direction: column;
 		background-color: black;
 		color: white;
-		width: 875px;
+		max-width: 875px;
 		height: 190px;
-		position: absolute;
-		top: 50px;
-		right: 0;
 		padding: 50px 444px 50px 65px;
-		z-index: 2;
 	}
 
 	&__title-description {
@@ -114,24 +124,21 @@ body {
 		blink-caret .75s step-end infinite;
 	}
 
-	&__title-description:after {
-	display: block;
-	content: "";
-	border: 1px solid #303030;
-	width: 100%;
-	position: absolute;
-	top: 85px;
+	&__title-name:after {
+		display: block;
+		content: "";
+		border: 1px solid #303030;
+		width: 92%;
+		position: absolute;
+		top: 140px;
 	}
 
 	&__buttons {
 		display: flex;
 		background-color: #fac02d;
-		width: 810px;
-		position: absolute;
-		top: 235px;
-		right: 0;
+		width: 100%;
+		max-width: 810px;
 		padding: 25px 200px 25px 45px;
-		z-index: 1;
 	}
 
 	&__buttons-list {
@@ -145,6 +152,7 @@ body {
 	&__buttons-button{
 		display: block;
 		opacity: .5;
+		font-size: 0;
 	}
 
 	&__buttons-button:hover {
