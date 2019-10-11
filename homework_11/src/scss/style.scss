@@ -8,18 +8,27 @@ body {
 	font-size: 100%;
 	font-family: 'Raleway', sans-serif;
 	background: url(../img/background.jpg) no-repeat;
+	background-size: 100%;
 }
 
 .container {
+	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
+	padding: 0 15px;
 }
 
 .header {
 	display: block;
-	padding: 50px 15px;
+	padding: 50px 0;
 	color: black;
 	height: 100vh;
+
+	&__hat {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 
 	&__logo {
 		display: inline-block;
@@ -28,7 +37,6 @@ body {
 
 	&__nav {
 		display: inline-block;
-		float: right;
 		width: 550px;
 	}
 
@@ -62,7 +70,7 @@ body {
 		justify-content: center;
 		align-items: flex-start;
 		height: 70vh;
-		width: 30vw;
+		width: 50%;
 	}
 
 	&__info-main {
@@ -103,7 +111,7 @@ body {
 }
 
 .main {
-	padding: 50px 15px;
+	padding: 50px 0;
 	background-color: #00bcbc;
 	color: white;
 
@@ -115,7 +123,7 @@ body {
 	}
 
 	&__info {
-		width: 30vw;
+		width: 50%;
 	}
 
 	&__info-header {
@@ -128,7 +136,10 @@ body {
 	&__info-caption {
 		font-weight: 300;
 		font-size: 16px;
-		margin-bottom: 20px;
 		line-height: 1.5;
+	}
+
+	&__info-caption:not(:last-child) {
+		margin-bottom: 20px;
 	}
 }
