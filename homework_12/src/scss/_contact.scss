@@ -1,0 +1,80 @@
+.contact {
+	background: url('../img/bg.jpg') no-repeat;
+	background-size: 100%;
+
+	&__main {
+		padding: 100px 0;
+		text-align: center;
+	}
+
+	&__main-header {
+		font-weight: 700;
+		text-transform: capitalize;
+		font-size: 96px;
+		margin-bottom: 25px;
+	}
+
+	&__main-subtitle {
+		font-weight: 300;
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: row;
+	}
+
+	&__left {
+		width: 50%;
+	}
+
+	&__right {
+		text-align: left;
+	}
+
+	&__right-header {
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	&__right-info {
+		font-weight: 300;
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	width: 85%;
+	height: 440px;
+	justify-content: space-between;
+
+	&__text {
+		background-color: $aqua;
+		padding: 15px;
+		color: white;
+		border-style: none;
+		font-family: $main-font;
+		font-weight: 300;
+		opacity: .6;
+
+		&:focus {
+			opacity: 1;
+			border-left: 5px solid $blue;
+		}
+
+		&::placeholder {
+		color: white;
+		font-family: $main-font;
+		font-weight: 300;
+		}
+	}
+
+	&__field {
+		resize: none;
+	}
+}

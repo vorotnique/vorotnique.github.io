@@ -7,8 +7,6 @@
 body {
 	font-size: 100%;
 	font-family: 'Raleway', sans-serif;
-	background: url(../img/background.jpg) no-repeat;
-	background-size: 100%;
 }
 
 .container {
@@ -23,6 +21,8 @@ body {
 	padding: 50px 0;
 	color: black;
 	height: 100vh;
+	background: url(../img/background.jpg) no-repeat;
+	background-size: 100%;
 
 	&__hat {
 		display: flex;
@@ -89,13 +89,15 @@ body {
 
 	&__info-link {
 		display: block;
-		padding: 15px;
+		padding: 20px 25px;
 		background-color: #ff6033;
 		text-decoration: none;
 		text-transform: uppercase;
 		font-weight: 300;
+		font-size: 18px;
+		line-height: 1;
 		color: white;
-		box-shadow: 1px 1px 3px 1px black;
+		box-shadow: 1px 1px 9px 0 gray;
 	}
 
 	&__info-link:hover {
@@ -106,6 +108,8 @@ body {
 
 	&__scroll {
 		display: block;
+		font-size: 0;
+		width: 24px;
 		margin: 0 auto;
 	}
 }

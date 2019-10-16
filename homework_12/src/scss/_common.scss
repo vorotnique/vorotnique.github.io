@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+	font-family: $main-font;
+	color: $dark;
+	font-size: 100%;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: auto;
+}
+
+.cahee__footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color: $dark;
+	color: $light;
+	padding: 25px 0;
+	font-size: .9rem;
+
+	&-logo {
+		font-family: $logo-font;
+		text-transform: capitalize;
+		font-size: 2rem;
+		line-height: 1;
+	}
+}
+
+.pink {
+	font-weight: 700;
+	color: $pink;
+}

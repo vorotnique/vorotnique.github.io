@@ -14,6 +14,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-family: $main-font;
 }
 
 .container {
@@ -23,3 +24,6 @@ body {
 	padding: 0 15px;
 }
 
+.t-upper {
+	text-transform: uppercase;
+}
