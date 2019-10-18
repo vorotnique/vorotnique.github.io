@@ -102,12 +102,6 @@ body {
 	transition: all .2s ease-in;
 	}
 
-	&__item {
-		width: 42px;
-		height: 42px;
-		background-color: #5ecbe7;
-	}
-
 	&__link {
 		display: block;
 		width: 42px;
@@ -122,16 +116,16 @@ body {
 }
 
 .facebook {
-	background: url(../img/facebook.png) no-repeat;
+	background: #5ecbe7 url(../img/facebook.png) no-repeat;
 	background-position: center;
 }
 
 .twitter {
-	background: url(../img/twitter.png) no-repeat;
+	background: #5ecbe7 url(../img/twitter.png) no-repeat;
 	background-position: center;
 }
 
 .google {
-	background: url(../img/google.png) no-repeat;
+	background: #5ecbe7 url(../img/google.png) no-repeat;
 	background-position: center;
 }
