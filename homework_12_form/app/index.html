@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>Log in</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="screen">
+		<section class="signin">
+			<nav class="signin__navigation">
+				<ul class="signin__navigation-list">
+					<li class="signin__navigation-item">
+						<a href="#" class="signin__navigation-link link-active">Sign in</a>
+				</li>
+					<li class="signin__navigation-item">
+						<a href="#" class="signin__navigation-link link-inactive">Join us</a>
+				</li>
+				</ul>
+			</nav>
+			<form id="signin" action="#" class="signin__form">
+				<label for="username" class="signin__form-caption">username</label>
+				<input type="text" id="username" class="signin__form-field" minlength="6" required>
+				<label for="password" class="signin__form-caption">password</label>
+				<input type="password" id="password" class="signin__form-field" minlength="6" required>
+				<input type="checkbox" id="stay" class="signin__form-checkbox">
+				<label for="stay" class="signin__form-minicap">Keep me signed in</label>
+				<input type="submit" class="signin__form-button" value="sign in">
+			</form>
+			<nav class="signin__options">
+				<ul class="signin__options-list">
+					<li class="signin__options-item">
+						<a href="#" class="signin__options-link">Forgot password</a>
+				</li>
+					<li class="signin__options-item">
+						<a href="#" class="signin__options-link">Create an account</a>
+				</li>
+				</ul>
+			</nav>
+		</section>
+	</div>
+	<script src="js/bundle.js"></script>
+</body>
+</html>
