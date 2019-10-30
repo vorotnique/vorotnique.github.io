@@ -17,13 +17,21 @@ body {
 
 .container {
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1140px;
 	padding: 0 15px;
 	margin: auto;
 }
 
 .sh-section {
 	padding: px_to_em(100px) 0;
+
+	&:nth-child(odd) {
+		background-color: $white;
+	}
+
+	&:nth-child(even) {
+		background-color: $light-grey-bg;
+	}
 
 	&__title {
 		font-family: $title-font;
@@ -55,4 +63,30 @@ body {
 		@extend .sh-section__text-title;
 		font-size: px_to_rem(17px);
 	}
+
+	&__text {
+		line-height: 1.8;
+	}
+
+	&__know-more {
+		text-transform: uppercase;
+		color: $white;
+
+		.fas {
+			margin-left: 5px;
+		}
+	}
+}
+
+ul {
+	list-style: none;
+	li {
+		a {
+			display: flex;
+		}
+	}
+}
+
+a {
+	text-decoration: none;
 }

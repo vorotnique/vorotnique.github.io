@@ -1,0 +1,51 @@
+.sh-services {
+	color: $white;
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: space-between;
+		margin: 0 -15px;
+		height: 1187px;
+	}
+
+	&__item {
+		height: fit-content;
+
+		&.wide {
+			flex-basis: 63%;
+		}
+
+		&.thin {
+			flex-basis: 35%;
+		}
+	}
+
+	&__info {
+		position: relative;
+		@include padding-hack(380px) {
+
+		}
+
+		@include layout {
+			background-color: rgba($black, .7);
+			z-index: 1;
+		}
+	}
+
+	&__img {
+		width: 100%;
+	}
+
+	&__caption {
+		position: absolute;
+		z-index: 2;
+		bottom: 0;
+		padding: 0 65px 50px;
+
+		.sh-section__text {
+			margin-bottom: 15px;
+		}
+	}
+}
