@@ -1,0 +1,22 @@
+.des-contact {
+	&__button {
+		display: block;
+		margin: 0 auto;
+		padding: 20px 0;
+		width: 100%;
+		max-width: 70%;
+		background-color: $dark-text;
+		border: 1px solid transparent;
+		color: $white;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: px_to_em(16px);
+		letter-spacing: 3px;
+		transition: $transition;
+		&:hover {
+			background-color: $white;
+			color: $dark-text;
+			border: 1px solid $dark-text;
+		}
+	}
+}

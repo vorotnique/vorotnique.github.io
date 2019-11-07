@@ -1,0 +1,19 @@
+.des-footer {
+	padding-bottom: 65px;
+
+	&__info {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__logo {
+		width: 40px;
+		filter: invert(100%);
+		margin-right: 35px;
+	}
+
+	&__copyright {
+		display: inline-flex;
+	}
+}
