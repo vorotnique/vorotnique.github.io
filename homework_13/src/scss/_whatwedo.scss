@@ -13,8 +13,25 @@
 
 	&__text {
 		font-size: px_to_em(14px);
+	}
+
+	&__item {
 		&:not(:last-child) {
-			margin-bottom: 100px;
+			margin-bottom: 50px;
+		}
+
+		@include lg-screen {
+			&:not(:last-child) {
+				margin-bottom: 100px;
+			}
+		}
+	}
+
+	.des-info {
+		padding: 30px 15px;
+
+		@include sm-screen {
+			padding: 50px 0 30px;
 		}
 	}
 }

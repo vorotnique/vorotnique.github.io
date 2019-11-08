@@ -15,7 +15,7 @@ body {
 }
 
 .des-section {
-	padding: 100px 0;
+	padding: 50px 0;
 
 	&:nth-child(odd) {
 		color:$white;
@@ -25,36 +25,41 @@ body {
 		color:$dark-text;
 	}
 
+	@include sm-screen {
+		padding: 100px 0;
+	}
+
 	&__border {
 		text-align: center;
-		border-bottom: 1px solid currentcolor;
+		border: 1px solid currentcolor;
+		border-top: none;
 		position: relative;
 
 		&::before {
 			content: "";
 			position: absolute;
-			height: calc(100% - 11px);
-			width: 1px;
+			height: 1px;
+			width: 20%;
 			background-color: currentColor;
 			left: 0;
-			bottom: 0;
+			top: 0;
 
 			@include sm-screen {
-				height: calc(100% - 21px);
+				width: 25%;
 			}
 		}
 
 		&::after {
 			content: "";
 			position: absolute;
-			height: calc(100% - 11px);
-			width: 1px;
+			height: 1px;
+			width: 20%;
 			background-color: currentColor;
 			right: 0;
-			bottom: 0;
+			top: 0;
 
 			@include sm-screen {
-				height: calc(100% - 21px);
+				width: 25%;
 			}
 		}
 	}
@@ -87,40 +92,16 @@ ul {
 	font-weight: 700;
 	text-transform: uppercase;
 	font-size: px_to_em(18px);
-	letter-spacing: 5px;
-	margin-bottom: 65px;
-	position: relative;
+	letter-spacing: 2px;
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	transform: translateX(-50%);
 
 	@include sm-screen {
+		top: -20px;
 		font-size: px_to_em(34px);
-	}
-
-	&::before {
-		content: "";
-		position: absolute;
-		width: 20%;
-		height: 1px;
-		background-color: currentColor;
-		left: 0;
-		top: 50%;
-
-		@include sm-screen {
-			width: 25%;
-		}
-	}
-
-	&::after {
-		content: "";
-		position: absolute;
-		width: 20%;
-		height: 1px;
-		background-color: currentColor;
-		right: 0;
-		top: 50%;
-
-		@include sm-screen {
-			width: 25%;
-		}
+		letter-spacing: 5px;
 	}
 }
 
@@ -130,10 +111,10 @@ ul {
 	width: 100%;
 	max-width: 550px;
 	margin: 0 auto;
-	padding: 0 15px 30px;
+	padding: 30px 15px;
 
 	@include sm-screen {
-		padding: 0 0 30px;
+		padding: 30px 0;
 	}
 
 	&__text:not(:last-child) {

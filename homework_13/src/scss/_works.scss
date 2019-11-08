@@ -14,6 +14,7 @@
 
 	&__list-item {
 		width: 100%;
+		max-width: 550px;
 
 			@include sm-screen {
 				width: 50%;
@@ -54,25 +55,25 @@
 }
 
 .link1 {
-	background: url('../img/pic1.jpg');
+	background: url('../img/pic1.jpg') no-repeat;
 }
 
 .link2 {
-	background: url('../img/pic2.jpg');
+	background: url('../img/pic2.jpg') no-repeat;
 }
 
 .link3 {
-	background: url('../img/pic3.jpg');
+	background: url('../img/pic3.jpg') no-repeat;
 }
 
 .link4 {
-	background: url('../img/pic1.jpg');
+	background: url('../img/pic1.jpg') no-repeat;
 }
 
 .link5 {
-	background: url('../img/pic2.jpg');
+	background: url('../img/pic2.jpg') no-repeat;
 }
 
 .link6 {
-	background: url('../img/pic3.jpg');
+	background: url('../img/pic3.jpg') no-repeat;
 }
