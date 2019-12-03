@@ -1,0 +1,54 @@
+.top-nav {
+	background-color: $top-nav-bg;
+
+	.nav-pills {
+		padding: 15px 0;
+		width: 100%;
+		max-width: 470px;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.nav-link {
+		padding: 0 15px;
+		min-width: 100px;
+		text-transform: capitalize;
+		border: none;
+		background-color: $white;
+		transition: $transition;
+
+		&:hover {
+			background-color: $grey-border;
+		}
+	}
+}
+
+.social-nav {
+	display: flex;
+	justify-content: flex-end;
+
+	&__link {
+		display: flex;
+		@include square(55px);
+		justify-content: center;
+		align-items: center;
+		border: 1px solid $grey-border;
+		font-size: 1.5rem;
+		transition: $transition;
+
+		&:hover {
+			text-decoration: none;
+			background-color: $link-hover;
+		}
+	}
+
+	&__item:not(:last-child) .social-nav__link {
+		border-right: none;
+	}
+}
+
+@each $class, $color in $social-map {
+	.#{$class} {
+		color: $color;
+	}
+}
