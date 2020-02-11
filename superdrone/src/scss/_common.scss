@@ -1,0 +1,48 @@
+* {
+	color: $white;
+	font-family: $main-font;
+	font-weight: 700;
+}
+
+// *, *::before, *::after {
+// 	box-sizing: border-box;
+// 	padding: 0;
+// 	margin: 0;
+// }
+
+// html, body {
+// 	min-height: 100%;
+// }
+
+.image-wrapper {
+	@include padding-hack(250px);
+}
+
+
+.cart__label,
+.fa-times-circle,
+.fa-shopping-cart,
+.fa-times {
+	pointer-events: none;
+}
+
+.blur {
+	filter: blur(5px);
+}
+
+.success-msg {
+	position: fixed;
+	top: 20px;
+	padding: 20px;
+	animation: slide 3s forwards;
+}
+
+@keyframes slide {
+	0% {
+		right: 20px;
+	}
+
+	100% {
+		right: -10%;
+	}
+}

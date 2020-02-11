@@ -1,0 +1,75 @@
+.footer {
+	background-color: $gray-bg;
+	padding: 75px 0;
+
+	ul {
+		padding: 0;
+		display: flex;
+		list-style: none;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	&__legal-link {
+		color: $gray-text;
+		font-weight: 400;
+		font-size: px_to_rem(16px);
+		&:hover {
+			color: $gray-text;
+		}
+	}
+
+	&__social-link {
+		display: block;
+		@include square(40px);
+		text-align: center;
+		border: 1px solid $white;
+		border-radius: 50%;
+		transition: $transition;
+		line-height: 40px;
+		&:hover {
+			color: black;
+			background-color: cyan;
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+		padding: 90px 0;
+	}
+
+	&__contacts-address {
+		padding: 0 15px;
+		color: $gray-text;
+		font-weight: 400;
+		font-size: px_to_rem(20px);
+	}
+
+	&__contacts-email {
+		color: $gray-text;
+		text-decoration: underline;
+		font-weight: 400;
+		font-size: px_to_rem(18px);
+		&:hover {
+			color: $gray-text;
+			text-decoration: none;
+		}
+	}
+
+	&__contacts-phone {
+		color: $white;
+		font-size: px_to_rem(30px);
+		&:hover {
+			color: $white;
+		}
+	}
+
+	&__copyright {
+		color: $gray-text;
+		font-weight: 400;
+		font-size: px_to_rem(16px);
+	}
+}

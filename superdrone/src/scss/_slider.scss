@@ -1,0 +1,20 @@
+.slider {
+	background-color: $white;
+	padding: 140px 0;
+
+	&__title {
+		color: $black;
+		font-weight: 700;
+		font-size: px_to_rem(40px);
+		margin: 0 auto;
+	}
+
+	&__subtitle {
+		color: $gray-text;
+		font-weight: 400;
+		font-size: px_to_rem(18px);
+		margin: 0 auto;
+		text-align: center;
+		padding: 15px 0 90px;
+	}
+}

@@ -1,0 +1,22 @@
+.description {
+	background-color: $gray-bg;
+	background-image: url(../img/drone.png);
+	background-repeat: no-repeat;
+	background-position: 150% 50%;
+	background-size: 60%;
+	padding: 160px 0;
+
+	&__header {
+		text-transform: capitalize;
+		font-weight: 700;
+		font-size: px_to_rem(50px);
+		margin-bottom: 45px;
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: px_to_rem(24px);
+		color: $gray-text;
+		margin-bottom: 50px;
+	}
+}

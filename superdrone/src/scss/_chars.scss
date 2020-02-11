@@ -1,0 +1,47 @@
+.chars {
+	background-color: $gray-bg;
+	background-image: url(../img/drone.png);
+	background-repeat: no-repeat;
+	background-position: -50% 50%;
+	background-size: 60%;
+	padding: 140px 0;
+
+	&__title {
+		text-transform: capitalize;
+		font-weight: 700;
+		font-size: px_to_rem(40px);
+		text-align: center;
+	}
+
+	&__subtitle {
+		color: $gray-text;
+		font-weight: 400;
+		font-size: px_to_rem(18px);
+		margin: 0 auto;
+		padding: 15px 0 90px;
+	}
+
+	&__list {
+		margin-bottom: 0;
+	}
+
+	&__list-item {
+		display: flex;
+		flex-direction: column;
+		&:not(:last-child) {
+			margin-bottom: 50px;
+		}
+	}
+
+	&__list-definition {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: px_to_rem(24px);
+	}
+
+	&__list-parameter {
+		color: $gray-text;
+		font-weight: 400;
+		font-size: px_to_rem(14px);
+	}
+}

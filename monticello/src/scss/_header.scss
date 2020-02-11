@@ -1,0 +1,49 @@
+.header {
+	padding: 50px 0;
+	height: 100vh;
+	background-image: url(../img/header-bg.jpg);
+	background-size: cover;
+	color: $white;
+
+	&__nav-list {
+		list-style: circle;
+		height: 100%;
+		margin-bottom: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__nav-link {
+		text-transform: uppercase;
+		font-family: $main-font;
+		font-size: 14px;
+		color: $white;
+		&:hover {
+			color: white;
+		}
+	}
+
+	&__nav-social {
+		list-style: none;
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	&__nav-social_link {
+		display: block;
+		@include square(38px);
+		color: $white;
+		text-align: center;
+		border: 1px solid $white;
+		border-radius: 50%;
+		transition: $transition;
+		&:hover {
+			background-color: $white;
+		}
+	}
+}

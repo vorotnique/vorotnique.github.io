@@ -1,0 +1,83 @@
+<section class="chars">
+	<div class="container">
+		<div class="row chars__header">
+			<h3 class="chars__title">The world's first seamless drone with a very lightweight hull and high travel speed</h3>
+			<p class="chars__subtitle">The V.360° Camera allows you to masterfully capture the whole story with a premium 360° camera for limitless creating.</p>
+		</div>
+		<div class="row">
+			<div class="col-5"></div>
+			<div class="col-3">
+				<% const params1 = [
+				{
+					param: 'Length',
+					def: '90 mm'
+				},
+				{
+					param: 'Battery',
+					def: '180 ma * h'
+				},
+				{
+					param: 'Radius of action of equipment',
+					def: '50 m'
+				},
+				{
+					param: 'Receiver included',
+					def: 'yes'
+				},
+				{
+					param: 'Transmitter included',
+					def: 'yes'
+				},
+				{
+					param: 'Color of the fuselage',
+					def: 'black'
+				},
+				]%>
+				<ul class="chars__list">
+					<% params1.forEach(item1 => { %>
+					<li class="chars__list-item">
+						<span class="chars__list-parameter"><%= item1.param %></span>
+						<span class="chars__list-definition"><%= item1.def %></span>
+					</li>
+				<%})%>
+				</ul>
+			</div>
+			<div class="col-4">
+				<% const params2 = [
+				{
+					param: 'Main screw diameter',
+					def: '40 mm'
+				},
+				{
+					param: 'Flight time',
+					def: '7 min'
+				},
+				{
+					param: 'Receiver',
+					def: '2.4 GHz'
+				},
+				{
+					param: 'Transmitter',
+					def: '2.4 GHz, 4 channels'
+				},
+				{
+					param: 'Gyroscope',
+					def: '6-axis'
+				},
+				{
+					param: 'Need to buy',
+					def: '4 x AAA batteries'
+				},
+				]%>
+				<ul class="chars__list">
+					<% params2.forEach(item2 => { %>
+					<li class="chars__list-item">
+						<span class="chars__list-parameter"><%= item2.param %></span>
+						<span class="chars__list-definition"><%= item2.def %></span>
+					</li>
+				<%})%>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>

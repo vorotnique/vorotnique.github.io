@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>Homework 23</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="section">
+		<div class="container">
+			<form class="form">
+				<h3 class="title">1. Проверка на возраст</h3>
+				<label for="age" class="form__label">Введите ваш возраст:</label>
+				<input type="number" id="age" class="form__input" min="0" max="111" required>
+				<input type="button" value="OK!" class="form__button" id="age__button">
+				<p class="form__out" id="age__out">&nbsp;</p>
+				<h3 class="title">2. Вывод спецсимвола</h3>
+				<label for="special__number" class="form__label">Введите число от 0 до 9:</label>
+				<input type="number" id="special__number" class="form__input" min="0" max="9" required>
+				<input type="button" value="Результат" class="form__button" id="special__button">
+				<p class="form__out" id="special__out">&nbsp;</p>
+				<h3 class="title">3. Проверка числа на одинаковые символы</h3>
+				<label for="triple__number" class="form__label">Введите трехзначное число:</label>
+				<input type="number" id="triple__number" class="form__input" minlength="3" maxlength="3" required>
+				<input type="button" value="Проверить" class="form__button" id="triple__button">
+				<p class="form__out" id="triple__out">&nbsp;</p>
+				<h3 class="title">4. Високосный год</h3>
+				<label for="year" class="form__label">Введите год:</label>
+				<input type="number" id="year" class="form__input" required>
+				<input type="button" value="Проверить" class="form__button" id="year__button">
+				<p class="form__out" id="year__out">&nbsp;</p>
+				<h3 class="title">5. Палиндром</h3>
+				<label for="palindrom" class="form__label">Введите число:</label>
+				<input type="number" id="palindrom" class="form__input" required>
+				<input type="button" value="Проверить" class="form__button" id="palindrom__button">
+				<p class="form__out" id="palindrom__out">&nbsp;</p>
+				<h3 class="title">6. Конвертер валют</h3>
+				<label for="moneySum" class="form__label">Введите сумму в USD:</label>
+				<input type="number" id="moneySum" class="form__input" required>
+				<input type="button" value="Конвертировать" class="form__button" id="money__button">
+				<input class="form__radio" type="radio" name="money" value="0.90" id="EUR">
+				<label for="EUR" class="form__label">EUR</label>
+				<input class="form__radio" type="radio" name="money" value="23.93" id="UAH">
+				<label for="UAH" class="form__label">UAH</label>
+				<input class="form__radio" type="radio" name="money" value="1.7" id="AZN">
+				<label for="AZN" class="form__label">AZN</label>
+				<p class="form__out" id="money__out">&nbsp;</p>
+				<h3 class="title">7. Подсчёт скидки и суммы</h3>
+				<label for="sum" class="form__label">Введите сумму покупки:</label>
+				<input type="number" id="sum" class="form__input" required>
+				<input type="button" value="Вывести сумму" class="form__button" id="sum__button">
+				<p class="form__out" id="discount__out">&nbsp;</p>
+				<p class="form__out" id="sum__out">&nbsp;</p>
+				<h3 class="title">8. Окружность в квадрате</h3>
+				<label for="circleLength" class="form__label">Введите длинну окружности:</label>
+				<input type="number" id="circleLength" class="form__input" required>
+				<label for="squarePer" class="form__label">Введите периметр квадрата:</label>
+				<input type="number" id="squarePer" class="form__input" required>
+				<input type="button" value="Вывести сумму" class="form__button" id="figure__button">
+				<p class="form__out" id="figure__out">&nbsp;</p>
+				<h3 class="title">9. Вопросы</h3>
+				<h3>Сколько будет 2 + 2?</h3>
+				<input class="form__radio" type="radio" name="question1" value="4" id="four">
+				<label for="four" class="form__label">4</label><br>
+				<input class="form__radio" type="radio" name="question1" value="3" id="three">
+				<label for="three" class="form__label">3</label><br>
+				<input class="form__radio" type="radio" name="question1" value="5" id="five">
+				<label for="five" class="form__label">5</label>
+				<h3>Столица США?</h3>
+				<input class="form__radio" type="radio" name="question2" value="Washington" id="WA">
+				<label for="WA" class="form__label">Washington</label><br>
+				<input class="form__radio" type="radio" name="question2" value="New York" id="NY">
+				<label for="NY" class="form__label">New York</label><br>
+				<input class="form__radio" type="radio" name="question2" value="Chicago" id="CH">
+				<label for="CH" class="form__label">Chicago</label>
+				<h3>Денежная единица Польши?</h3>
+				<input class="form__radio" type="radio" name="question3" value="dollar" id="dollar">
+				<label for="dollar" class="form__label">Доллар</label><br>
+				<input class="form__radio" type="radio" name="question3" value="euro" id="euro">
+				<label for="euro" class="form__label">Евро</label><br>
+				<input class="form__radio" type="radio" name="question3" value="zloty" id="zloty">
+				<label for="zloty" class="form__label">Злотый</label><br>
+				<input type="button" value="Узнать результат" class="form__button" id="question__button">
+				<p class="form__out" id="question__out">&nbsp;</p>
+				<h3 class="title">10. Дата</h3>
+				<label for="date1" class="form__label">Введите дату:</label>
+				<input type="date" id="date1" class="form__input" required>
+				<input type="button" value="Вывести следующую дату" class="form__button" id="date__button">
+				<p class="form__out" id="date__out">&nbsp;</p>
+			</form>
+		</div>
+	</section>
+	<script src="js/bundle.js"></script>
+</body>
+</html>

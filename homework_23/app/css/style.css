@@ -1,0 +1,16 @@
+.container {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.section {
+	padding: 20px 0;
+}
+
+.form__out {
+	font-style: italic;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9jb21tb24uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNDLFdBQVc7RUFDWCxpQkFBaUI7RUFDakIsY0FBYztFQUNkLGVBQWUsRUFBQTs7QUFHaEI7RUFDQyxlQUFlLEVBQUE7O0FBTWhCO0VBQ0Msa0JBQWtCLEVBQUEiLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRhaW5lciB7XHJcblx0d2lkdGg6IDEwMCU7XHJcblx0bWF4LXdpZHRoOiAxMTcwcHg7XHJcblx0bWFyZ2luOiAwIGF1dG87XHJcblx0cGFkZGluZzogMCAxNXB4O1xyXG59XHJcblxyXG4uc2VjdGlvbiB7XHJcblx0cGFkZGluZzogMjBweCAwO1xyXG59XHJcblxyXG4uZm9ybSB7XHJcbn1cclxuXHJcbi5mb3JtX19vdXQge1xyXG5cdGZvbnQtc3R5bGU6IGl0YWxpYztcclxufSJdfQ== */

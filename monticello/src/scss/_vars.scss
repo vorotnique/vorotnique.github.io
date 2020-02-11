@@ -1,0 +1,15 @@
+//colors
+
+$white: white;
+$black: black;
+
+$transition: all .3s ease;
+
+//fonts
+
+@font-face {
+	font-family: "GothamBook";
+	src: local('GothamBook'), url('../assets/fonts/GothamBook.woff') format('woff');
+}
+
+$main-font: 'GothamBook';

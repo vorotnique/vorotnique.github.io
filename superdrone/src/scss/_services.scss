@@ -1,0 +1,33 @@
+.services {
+	background-color: $gray-bg;
+	padding: 110px 0;
+	border-bottom: 1px solid $gray-text;
+
+	&__title {
+		text-transform: capitalize;
+		font-weight: 700;
+		font-size: px_to_rem(50px);
+		margin: 0 auto;
+	}
+
+	&__subtitle {
+		color: $gray-text;
+		font-weight: 400;
+		font-size: px_to_rem(18px);
+		text-align: center;
+		padding: 15px 0 90px;
+	}
+
+	&__name {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: px_to_rem(30px);
+		padding: 20px 0;
+	}
+
+	&__text {
+		color: $gray-text;
+		font-weight: 400;
+		font-size: px_to_rem(18px);
+	}
+}

@@ -1,0 +1,97 @@
+{
+  "menu": [
+    "home",
+    "sale",
+    "handbags",
+    "wallets",
+    "accessories",
+    "mens store",
+    "shoes",
+    "vintage",
+    "services",
+    "contact us"
+  ],
+  "footerMenu": [
+    {
+      "title": "featured sale",
+      "links": [
+        "Alexis Hudson",
+        "American Apparel",
+        "Ben Sherman",
+        "Big Buddha",
+        "Chanel",
+        "Christian Audigier",
+        "Coach",
+        "Cole Haan"
+      ]
+    },
+    {
+      "title": "Mens store",
+      "links": [
+        "Alexis Hudson",
+        "American Apparel",
+        "Ben Sherman",
+        "Big Buddha",
+        "Chanel",
+        "Christian Audigier",
+        "Coach",
+        "Cole Haan"
+      ]
+    },
+    {
+      "title": "Women store",
+      "links": [
+        "Alexis Hudson",
+        "American Apparel",
+        "Ben Sherman",
+        "Big Buddha",
+        "Chanel",
+        "Christian Audigier",
+        "Coach",
+        "Cole Haan"
+      ]
+    },
+    {
+      "title": "Quick links",
+      "links": [
+        "Alexis Hudson",
+        "American Apparel",
+        "Ben Sherman",
+        "Big Buddha",
+        "Chanel",
+        "Christian Audigier",
+        "Coach",
+        "Cole Haan"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "JXD 512W 90",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis voluptatum aut possimus provident tenetur modi veniam dolorem doloremque totam expedita?",
+      "img_url": "./img/prod-item1.jpg",
+      "price": 299,
+      "currency": "$",
+      "quantity": 5
+    },
+    {
+      "id": 2,
+      "title": "DJI Phantom 4 Pro+",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis voluptatum aut possimus provident tenetur modi veniam dolorem doloremque totam expedita?",
+      "img_url": "./img/prod-item2.jpg",
+      "price": 399,
+      "currency": "$",
+      "quantity": 11
+    },
+    {
+      "id": 3,
+      "title": "Skytech M62 2.4 GHz",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis voluptatum aut possimus provident tenetur modi veniam dolorem doloremque totam expedita?",
+      "img_url": "./img/prod-item3.jpg",
+      "price": 150,
+      "currency": "$",
+      "quantity": 10
+    }
+  ]
+}
