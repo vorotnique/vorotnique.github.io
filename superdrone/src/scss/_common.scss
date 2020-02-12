@@ -2,6 +2,7 @@
 	color: $white;
 	font-family: $main-font;
 	font-weight: 700;
+	scroll-behavior: smooth;
 }
 
 // *, *::before, *::after {
@@ -15,7 +16,7 @@
 // }
 
 .image-wrapper {
-	@include padding-hack(250px);
+	@include padding-hack(400px);
 }
 
 

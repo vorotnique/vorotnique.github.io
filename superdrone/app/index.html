@@ -4,17 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
   <title>Superdrone</title>
-  <link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.png">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<script src="https://kit.fontawesome.com/3104291314.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 </head>
 <body>
   
 
 
-<header class="header">
+<header class="header" id="header">
 	<div class="container">
+		<main role='main' class="loader" id="propeller-loader">
+			<div aria-busy='true' aria-label='Loading' role='progressbar'></div>
+		</main>
 		<div class="header__wrapper">
 			<div class="row header__head">
 				<div class="col-3">
@@ -24,8 +28,8 @@
 				<div class="col-7">
 					<nav class="header__nav">
 						<ul class="header__nav-list">
-							<li class="header__nav-item"><a href="#" class="header__nav-link">meet the product</a></li>
-							<li class="header__nav-item"><a href="#" class="header__nav-link">meet the company</a></li>
+							<li class="header__nav-item"><a href="#chars" class="header__nav-link">meet the product</a></li>
+							<li class="header__nav-item"><a href="#services" class="header__nav-link">meet the company</a></li>
 							<li class="header__nav-item"><a href="#" class="header__nav-link">support</a></li>
 							<li class="header__nav-item"><a href="#" class="header__nav-link">blog</a></li>
 						</ul>
@@ -43,42 +47,42 @@
 				<h1 class="header__content-title">your receptionist anywhere</h1>
 				<h4 class="header__content-subtitle">When a user taps on a button in a mobile app, and the button pulls down a navigation, that’s a microinteraction.</h4>
 				<div class="header__content-link">
-					<a href="#" class="header__link">buy now</a>
+					<a href="#shop" class="header__link">buy now</a>
 				</div>
 				<div class="header__scroll">
-					<a href="#" class="header__scroll-link"><i class="fas fa-angle-double-down"></i></a>
+					<a href="#description" class="header__scroll-link"><i class="fas fa-angle-double-down"></i></a>
 				</div>
 			</div>
 		</div>
 		<div class="modal">
-		<div class="modal__body">
-			<button class="modal__close">
-				<i class="far fa-times-circle"></i>
-			</button>
-			<h2 class="modal__title">Cart</h2>
-			<form class="modal__form">
-				<ul class="modal__products cart-list"></ul>
-				<p class="cart__total">0</p>
-				<p class="cart__empty">Your cart is empty</p>
-				<input type="submit" value="Buy" class="btn btn-primary submit-btn">
-				<input type="button" value="Clear cart" class="btn btn-warning clear-btn">
-			</form>
+			<div class="modal__body">
+				<button class="modal__close">
+					<i class="far fa-times-circle"></i>
+				</button>
+				<h2 class="modal__title">Cart</h2>
+				<form class="modal__form">
+					<ul class="modal__products cart-list"></ul>
+					<p class="cart__total">0</p>
+					<p class="cart__empty">Your cart is empty</p>
+					<input type="submit" value="Buy" class="btn btn-primary submit-btn">
+					<input type="button" value="Clear cart" class="btn btn-warning clear-btn">
+				</form>
+			</div>
 		</div>
-	</div>
 	</header>
-<section class="description">
+<section class="description" id="description">
 	<div class="container">
 		<div class="row">
 			<div class="col-6">
 				<h3 class="description__header">super light drone</h3>
 				<p class="description__text">More specifically, microinteractions are the animations and changes of the interface that happen once a user interacts with something, anything. Consider them interactive but informative animations. There are many reasons to use microinteractions. I can give you four right now.</p>
 				<p class="description__text">The first good thing about microinteractions is improved usability. If the animation of the menu, from the example I gave above, slides down and over the content the user was just looking at, it provides affirmation for the user. This animation lets the user know what’s going on through visual cues.</p>
-				<a href="#" class="header__link">read more</a>
+				<a href="#chars" class="header__link">read more</a>
 			</div>
 		</div>
 	</div>
 </section>
-<section class="services">
+<section class="services" id="services">
 	<div class="container">
 		<div class="row services__header">
 			<h3 class="services__title">super services</h3>
@@ -103,7 +107,7 @@
 		</div>
 	</div>
 </section>
-<section class="chars">
+<section class="chars" id="chars">
 	<div class="container">
 		<div class="row chars__header">
 			<h3 class="chars__title">The world's first seamless drone with a very lightweight hull and high travel speed</h3>
@@ -186,15 +190,22 @@
 		</div>
 	</div>
 </section>
-<section class="slider">
+<section class="slider" id="slider">
 	<div class="container">
 		<div class="row slider__header">
 			<h3 class="slider__title">Mount to anything. Anywhere.</h3>
 			<p class="slider__subtitle">Fully compatible with GoPro® mounts, traditional cameras and tripod designs with a built in ¼ – 20 UNC tripod housing, we’re made to mount anything. From helmets to handlebars, we go where you go.</p>
 		</div>
+		<div class="owl-carousel">
+			<div class="slider__wrapper"><img src="./img/drone-slide1.jpg" alt="drone"></div>
+			<div class="slider__wrapper"><img src="./img/drone-slide2.jpg" alt="drone"></div>
+			<div class="slider__wrapper"><img src="./img/drone-slide3.jpg" alt="drone"></div>
+			<div class="slider__wrapper"><img src="./img/drone-slide4.jpg" alt="drone"></div>
+			<div class="slider__wrapper"><img src="./img/drone-slide5.jpg" alt="drone"></div>
+		</div>
 	</div>
 </section>
-<section class="shop">
+<section class="shop" id="shop">
 	<div class="container">
 		<div class="row shop__header">
 			<h3 class="shop__title">we rent the best drones</h3>
@@ -203,7 +214,7 @@
 		<div class="row" id="productsGrid"></div>
 	</div>
 </section>
-<footer class="footer">
+<footer class="footer" id="footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-5">
@@ -248,5 +259,7 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/3104291314.js" crossorigin="anonymous"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
 </body>
 </html>

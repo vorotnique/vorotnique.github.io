@@ -17,4 +17,8 @@
 		text-align: center;
 		padding: 15px 0 90px;
 	}
+
+	&__wrapper {
+		@include padding-hack(300px);
+	}
 }

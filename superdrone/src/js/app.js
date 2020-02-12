@@ -9,7 +9,7 @@ let productsReadyEvent = new Event(productsReadyEventName);
 
 const cartForm = document.querySelector('.modal__form');
 
-getProducts('https://my-json-server.typicode.com/davaynamore/fakeserver/db')
+getProducts('https://my-json-server.typicode.com/vorotnique/fakeserver/db')
 .then(
 	function(response) {
 		if (response.status !== 200) {
@@ -64,7 +64,7 @@ document.addEventListener('click', (event) => {
 });
 
 document.addEventListener(productsReadyEventName, () => {
-	const loader = document.querySelector('#cube-loader');
+	const loader = document.querySelector('#propeller-loader');
 	renderProducts(Storage.get('products'));
 	getCartValue();
 	loader.classList.add('hidden');
@@ -73,4 +73,8 @@ document.addEventListener(productsReadyEventName, () => {
 cartForm.addEventListener('change', (event) => {
 	changeProductQuantity(event.target);
 	renderCart(getCartItems(getCartValue(), Storage.get('products')));
+});
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
 });

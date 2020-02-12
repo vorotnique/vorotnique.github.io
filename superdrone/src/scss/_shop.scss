@@ -3,6 +3,11 @@
 	padding: 140px 0 100px;
 	border-bottom: 1px solid $gray-text;
 
+	&__header {
+		display: flex;
+		flex-direction: column;
+	}
+
 	&__title {
 		text-transform: capitalize;
 		font-weight: 700;
