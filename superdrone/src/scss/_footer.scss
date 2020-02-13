@@ -1,6 +1,9 @@
 .footer {
 	background-color: $gray-bg;
-	padding: 75px 0;
+	padding: px_to_rem(10px) 0;
+	@include md-screen {
+		padding: px_to_rem(75px) 0;
+	}
 
 	ul {
 		padding: 0;
@@ -38,7 +41,13 @@
 		width: 100%;
 		justify-content: space-between;
 		align-items: center;
-		padding: 90px 0;
+		padding: px_to_rem(15px) 0;
+		@include xs-screen {
+			flex-direction: column;
+		}
+		@include md-screen {
+			padding: px_to_rem(90px) 0;
+		}
 	}
 
 	&__contacts-address {

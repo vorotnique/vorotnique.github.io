@@ -1,0 +1,268 @@
+<section class="contacts">
+	<div class="container">
+		<div class="row contacts__content">
+			<div class="col-md-6">
+				<form class="contacts__form">
+					<h3 class="contacts__form-header">contact us</h3>
+					<input type="text" class="contacts__form-text" placeholder="Your Name…" required>
+					<input type="text" class="contacts__form-text" placeholder="Your E-mail…" required>
+					<textarea class="contacts__form-textarea" placeholder="Your Message…" name="textarea" id="textarea" cols="30" rows="10" required></textarea>
+					<button type="submit" class="contacts__form-submit header__link">submit</button>
+				</form>
+			</div>
+			<div id="map" class="contacts__map col-md-6">
+				<script>
+					var map;
+					var mapStyles = [
+					{
+						"elementType": "geometry",
+						"stylers": [
+						{
+							"color": "#1d2c4d"
+						}
+						]
+					},
+					{
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+							"color": "#8ec3b9"
+						}
+						]
+					},
+					{
+						"elementType": "labels.text.stroke",
+						"stylers": [
+						{
+							"color": "#1a3646"
+						}
+						]
+					},
+					{
+						"featureType": "administrative.country",
+						"elementType": "geometry.stroke",
+						"stylers": [
+						{
+							"color": "#4b6878"
+						}
+						]
+					},
+					{
+						"featureType": "administrative.land_parcel",
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+							"color": "#64779e"
+						}
+						]
+					},
+					{
+						"featureType": "administrative.province",
+						"elementType": "geometry.stroke",
+						"stylers": [
+						{
+							"color": "#4b6878"
+						}
+						]
+					},
+					{
+						"featureType": "landscape.man_made",
+						"elementType": "geometry.stroke",
+						"stylers": [
+						{
+							"color": "#334e87"
+						}
+						]
+					},
+					{
+						"featureType": "landscape.natural",
+						"elementType": "geometry",
+						"stylers": [
+						{
+							"color": "#023e58"
+						}
+						]
+					},
+					{
+						"featureType": "poi",
+						"elementType": "geometry",
+						"stylers": [
+						{
+							"color": "#283d6a"
+						}
+						]
+					},
+					{
+						"featureType": "poi",
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+							"color": "#6f9ba5"
+						}
+						]
+					},
+					{
+						"featureType": "poi",
+						"elementType": "labels.text.stroke",
+						"stylers": [
+						{
+							"color": "#1d2c4d"
+						}
+						]
+					},
+					{
+						"featureType": "poi.park",
+						"elementType": "geometry.fill",
+						"stylers": [
+						{
+							"color": "#023e58"
+						}
+						]
+					},
+					{
+						"featureType": "poi.park",
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+							"color": "#3C7680"
+						}
+						]
+					},
+					{
+						"featureType": "road",
+						"elementType": "geometry",
+						"stylers": [
+						{
+							"color": "#304a7d"
+						}
+						]
+					},
+					{
+						"featureType": "road",
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+							"color": "#98a5be"
+						}
+						]
+					},
+					{
+						"featureType": "road",
+						"elementType": "labels.text.stroke",
+						"stylers": [
+						{
+							"color": "#1d2c4d"
+						}
+						]
+					},
+					{
+						"featureType": "road.highway",
+						"elementType": "geometry",
+						"stylers": [
+						{
+							"color": "#2c6675"
+						}
+						]
+					},
+					{
+						"featureType": "road.highway",
+						"elementType": "geometry.stroke",
+						"stylers": [
+						{
+							"color": "#255763"
+						}
+						]
+					},
+					{
+						"featureType": "road.highway",
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+							"color": "#b0d5ce"
+						}
+						]
+					},
+					{
+						"featureType": "road.highway",
+						"elementType": "labels.text.stroke",
+						"stylers": [
+						{
+							"color": "#023e58"
+						}
+						]
+					},
+					{
+						"featureType": "transit",
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+							"color": "#98a5be"
+						}
+						]
+					},
+					{
+						"featureType": "transit",
+						"elementType": "labels.text.stroke",
+						"stylers": [
+						{
+							"color": "#1d2c4d"
+						}
+						]
+					},
+					{
+						"featureType": "transit.line",
+						"elementType": "geometry.fill",
+						"stylers": [
+						{
+							"color": "#283d6a"
+						}
+						]
+					},
+					{
+						"featureType": "transit.station",
+						"elementType": "geometry",
+						"stylers": [
+						{
+							"color": "#3a4762"
+						}
+						]
+					},
+					{
+						"featureType": "water",
+						"elementType": "geometry",
+						"stylers": [
+						{
+							"color": "#0e1626"
+						}
+						]
+					},
+					{
+						"featureType": "water",
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+							"color": "#4e6d70"
+						}
+						]
+					}
+					];
+					function initMap() {
+						const superdrone = {lat: 32.660759, lng: 35.106139};
+						map = new google.maps.Map(document.getElementById('map'), {
+							center: superdrone,
+							zoom: 18,
+							styles: mapStyles
+						});
+						var marker = new google.maps.Marker({
+							position: superdrone,
+							map: map,
+							icon: 'http://maps.google.com/mapfiles/kml/paddle/red-stars.png'
+						});
+					}
+				</script>
+				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcKjdw8NgkHm-KrpJ_8TeiJaomaJ9wynQ&callback=initMap"
+				async defer></script>
+			</div>
+		</div>
+	</div>
+</section>

@@ -8,12 +8,6 @@
 	@return $target / $context + 0em;
 }
 
-@mixin lg-screen {
-	@media all and (min-width: 1200px) {
-		@content;
-	}
-}
-
 @mixin square($size) {
 	width: $size;
 	height: $size;
@@ -87,6 +81,12 @@
 
 @mixin xl-screen {
 	@media only screen and (min-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin xxl-screen {
+	@media only screen and (min-width: 1600px) {
 		@content;
 	}
 }

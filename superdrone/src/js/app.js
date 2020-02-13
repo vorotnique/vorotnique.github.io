@@ -76,5 +76,50 @@ cartForm.addEventListener('change', (event) => {
 });
 
 $(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
+
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollup').fadeIn();
+		} else {
+			$('.scrollup').fadeOut();
+		}
+	});
+
+	$('.scrollup').click(function(){
+		$("html, body").animate({ scrollTop: 0 }, 600);
+		return false;
+	});
+
+});
+
+// $(document).ready(function(){
+//   $(".owl-carousel").owlCarousel();
+// });
+
+$(document).ready(function(){
+	$('.carousel').slick({
+		centerMode: true,
+		centerPadding: '60px',
+		slidesToShow: 3,
+		responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				arrows: false,
+				centerMode: true,
+				centerPadding: '40px',
+				slidesToShow: 3
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				arrows: false,
+				centerMode: true,
+				centerPadding: '40px',
+				slidesToShow: 1
+			}
+		}
+		]
+	});
 });

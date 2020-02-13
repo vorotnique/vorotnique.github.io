@@ -12,15 +12,21 @@
 
 	&.open {
 		display: flex;
+		@include xs-screen {
+			max-width: 320px;
+		}
 	}
 
 	&__body {
 		width: 100%;
-		max-width: 600px;
-		padding: 20px;
+		max-width: 150px;
 		border-radius: 5px;
 		background-color: $gray-bg;
 		position: relative;
+		@include md-screen {
+			padding: 20px;
+			max-width: 600px;
+		}
 	}
 
 	&__title {

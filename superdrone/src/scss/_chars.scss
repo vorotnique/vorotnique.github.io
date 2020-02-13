@@ -1,35 +1,59 @@
 .chars {
 	background-color: $gray-bg;
-	background-image: url(../img/drone.png);
-	background-repeat: no-repeat;
-	background-position: -50% 50%;
-	background-size: 60%;
-	padding: 140px 0;
+	padding: px_to_rem(20px) 0;
+	@include md-screen {
+		background-image: url(../img/drone.png);
+		background-repeat: no-repeat;
+		background-position: -50% 50%;
+		background-size: 60%;
+		padding: px_to_rem(140px) 0;
+	}
 
 	&__title {
 		text-transform: capitalize;
 		font-weight: 700;
-		font-size: px_to_rem(40px);
+		font-size: px_to_rem(24px);
 		text-align: center;
+		@include md-screen {
+			font-size: px_to_rem(40px);
+		}
 	}
 
 	&__subtitle {
 		color: $gray-text;
 		font-weight: 400;
-		font-size: px_to_rem(18px);
+		font-size: px_to_rem(16px);
 		margin: 0 auto;
-		padding: 15px 0 90px;
+		padding: px_to_rem(15px) 0;
+		@include xs-screen {
+			text-align: center;
+		}
+		@include md-screen {
+			font-size: px_to_rem(18px);
+			padding: px_to_rem(15px) 0 px_to_rem(90px);
+		}
 	}
 
 	&__list {
 		margin-bottom: 0;
+		@include xs-screen {
+			padding: 8px 0;
+		}
 	}
 
 	&__list-item {
 		display: flex;
 		flex-direction: column;
 		&:not(:last-child) {
-			margin-bottom: 50px;
+			margin-bottom: px_to_rem(16px);
+		}
+		@include xs-screen {
+			text-align: center;
+		}
+		@include md-screen {
+			&:not(:last-child) {
+				margin-bottom: px_to_rem(50px);
+			}
 		}
 	}
 

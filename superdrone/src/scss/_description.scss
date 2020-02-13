@@ -1,23 +1,34 @@
 .description {
 	background-color: $gray-bg;
-	background-image: url(../img/drone.png);
-	background-repeat: no-repeat;
-	background-position: 150% 50%;
-	background-size: 60%;
-	padding: 160px 0;
+	padding: px_to_rem(20px) 0;
 	border-bottom: 1px solid $gray-text;
+	@include md-screen {
+		padding: px_to_rem(160px) 0;
+		background-image: url(../img/drone.png);
+		background-repeat: no-repeat;
+		background-position: 150% 50%;
+		background-size: 60%;
+	}
 
 	&__header {
 		text-transform: capitalize;
 		font-weight: 700;
-		font-size: px_to_rem(50px);
-		margin-bottom: 45px;
+		font-size: px_to_rem(28px);
+		margin-bottom: px_to_rem(25px);
+		@include md-screen {
+			font-size: px_to_rem(50px);
+			margin-bottom: px_to_rem(45px);
+		}
 	}
 
 	&__text {
 		font-weight: 400;
-		font-size: px_to_rem(24px);
+		font-size: px_to_rem(16px);
 		color: $gray-text;
-		margin-bottom: 50px;
+		margin-bottom: px_to_rem(20px);
+		@include md-screen {
+			font-size: px_to_rem(24px);
+			margin-bottom: px_to_rem(45px);
+		}
 	}
 }

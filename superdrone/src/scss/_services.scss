@@ -1,13 +1,19 @@
 .services {
 	background-color: $gray-bg;
-	padding: 110px 0;
+	padding: px_to_rem(20px) 0;
 	border-bottom: 1px solid $gray-text;
+	@include md-screen {
+		padding: px_to_rem(110px) 0;
+	}
 
 	&__title {
 		text-transform: capitalize;
 		font-weight: 700;
-		font-size: px_to_rem(50px);
+		font-size: px_to_rem(28px);
 		margin: 0 auto;
+		@include md-screen {
+			font-size: px_to_rem(50px);
+		}
 	}
 
 	&__subtitle {
@@ -15,19 +21,38 @@
 		font-weight: 400;
 		font-size: px_to_rem(18px);
 		text-align: center;
-		padding: 15px 0 90px;
+		padding: px_to_rem(15px) 0;
+		@include md-screen {
+			padding: px_to_rem(15px) 0 px_to_rem(90px);
+		}
+	}
+
+	&__element {
+		@include xs-screen {
+			text-align: center;
+			&:not(:last-child) {
+				margin-bottom: 15px;
+			}
+		}
 	}
 
 	&__name {
 		text-transform: uppercase;
 		font-weight: 700;
-		font-size: px_to_rem(30px);
-		padding: 20px 0;
+		font-size: px_to_rem(24px);
+		padding: px_to_rem(10px) 0;
+		@include md-screen {
+			font-size: px_to_rem(30px);
+			padding: px_to_rem(20px) 0;
+		}
 	}
 
 	&__text {
 		color: $gray-text;
 		font-weight: 400;
-		font-size: px_to_rem(18px);
+		font-size: px_to_rem(14px);
+		@include md-screen {
+			font-size: px_to_rem(18px);
+		}
 	}
 }

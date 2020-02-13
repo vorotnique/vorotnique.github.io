@@ -17,7 +17,7 @@ const insertElementIntoParent = (elements, parentElement) => {
 
 const createProductItem = ({ currency, description, id, img_url, price, title }) => {
 
-	const col = generateElement('div', 'col-4');
+	const col = generateElement('div', 'col-md-4');
 	const productGrid = generateElement('div', 'product-grid');
 	const productImageWrap = generateElement('div', 'product-image');
 	const imageWrapper = generateElement('div', 'image-wrapper');

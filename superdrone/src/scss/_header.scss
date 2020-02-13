@@ -8,15 +8,21 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		padding: 60px 0;
+		padding: 15px 0;
 		height: 100vh;
+		@include md-screen {
+			padding: 60px 0;
+		}
 	}
 
 	&__logo {
-		display: inline-block;
+		display: flex;
 		text-transform: uppercase;
-		font-size: px_to_rem(36px);
-		transform: translateX(-4rem);
+		font-size: px_to_rem(24px);
+		@include md-screen {
+			transform: translateX(-4rem);
+			font-size: px_to_rem(36px);
+		}
 	}
 
 	&__nav {
@@ -26,7 +32,7 @@
 	}
 
 	&__nav-list {
-		display: flex;
+		display: none;
 		flex-direction: row;
 		width: 100%;
 		height: 100%;
@@ -34,6 +40,9 @@
 		justify-content: space-between;
 		align-items: center;
 		list-style: none;
+		@include md-screen {
+			display: flex;
+		}
 	}
 
 	&__nav-link {
@@ -67,7 +76,10 @@
 	&__cart {
 		background: none;
 		border: none;
-		transform: translateX(2rem);
+		transform: translateX(-1rem);
+		@include md-screen {
+			transform: translateX(2rem);
+		}
 	}
 
 	&__link {
@@ -95,10 +107,13 @@
 		display: flex;
 		flex-grow: 1;
 		text-transform: capitalize;
-		font-size: px_to_rem(100px);
+		font-size: px_to_rem(36px);
 		font-weight: 700;
 		text-align: center;
 		width: 100%;
+		@include md-screen {
+			font-size: px_to_rem(100px);
+		}
 	}
 
 	&__content-subtitle {
@@ -119,6 +134,9 @@
 
 	.shifted {
 		transform: translateX(4rem);
+		@include xs-screen {
+			display: none;
+		}
 	}
 
 	&__scroll {
@@ -172,4 +190,16 @@
 		right: 0;
 		transform: scale(.7) translateY(-50%);
 	}
+}
+
+.scrollup{
+	width:40px;
+	height:40px;
+	opacity:0.3;
+	position:fixed;
+	bottom:50px;
+	right:100px;
+	display:none;
+	text-indent:-9999px;
+	background: url('../img/icon_top.png') no-repeat;
 }

@@ -1,0 +1,53 @@
+.contacts {
+	background-color: $gray-bg;
+	padding: px_to_rem(20px) 0;
+	@include md-screen {
+		padding: px_to_rem(110px) 0;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		@include xs-screen {
+			padding: 15px 0;
+		}
+	}
+
+	&__form-header {
+		text-transform: capitalize;
+		font-weight: 700;
+		font-size: px_to_rem(40px);
+		margin-bottom: px_to_rem(25px);
+		@inlcude md-screen {
+			font-size: px_to_rem(50px);
+			margin-bottom: px_to_rem(45px);
+		}
+	}
+
+	&__form-text {
+		margin-bottom: px_to_rem(15px);
+		color: $gray-text;
+	}
+
+	&__form-textarea {
+		margin-bottom: px_to_rem(15px);
+		color: $gray-text;
+		resize: none;
+	}
+
+	&__form-submit {
+		background-color: $gray-bg;
+	}
+
+	&__map {
+		@include xs-screen {
+			max-width: 300px;
+		}
+	}
+}
+
+#map {
+	width: 100%;
+	max-width: 500px;
+	height: 500px;
+}

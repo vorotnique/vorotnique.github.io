@@ -7,8 +7,10 @@
   <link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.png">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+<!-- <link rel="stylesheet" href="./assets/libs/owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="./assets/libs/owlcarousel/owl.theme.default.min.css"> -->
+<link rel="stylesheet" type="text/css" href="./assets/libs/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="./assets/libs/slick/slick-theme.css"/>
 </head>
 <body>
   
@@ -16,9 +18,6 @@
 
 <header class="header" id="header">
 	<div class="container">
-		<main role='main' class="loader" id="propeller-loader">
-			<div aria-busy='true' aria-label='Loading' role='progressbar'></div>
-		</main>
 		<div class="header__wrapper">
 			<div class="row header__head">
 				<div class="col-3">
@@ -53,6 +52,7 @@
 					<a href="#description" class="header__scroll-link"><i class="fas fa-angle-double-down"></i></a>
 				</div>
 			</div>
+			<a href="#" class="scrollup">Наверх</a>
 		</div>
 		<div class="modal">
 			<div class="modal__body">
@@ -69,11 +69,15 @@
 				</form>
 			</div>
 		</div>
-	</header>
+	</div>
+</header>
+<main role='main' class="loader" id="propeller-loader">
+	<div aria-busy='true' aria-label='Loading' role='progressbar'></div>
+</main>
 <section class="description" id="description">
 	<div class="container">
 		<div class="row">
-			<div class="col-6">
+			<div class="col-12 col-md-6">
 				<h3 class="description__header">super light drone</h3>
 				<p class="description__text">More specifically, microinteractions are the animations and changes of the interface that happen once a user interacts with something, anything. Consider them interactive but informative animations. There are many reasons to use microinteractions. I can give you four right now.</p>
 				<p class="description__text">The first good thing about microinteractions is improved usability. If the animation of the menu, from the example I gave above, slides down and over the content the user was just looking at, it provides affirmation for the user. This animation lets the user know what’s going on through visual cues.</p>
@@ -89,18 +93,18 @@
 			<p class="services__subtitle">The first good thing about microinteractions is improved usability. If the animation of the menu, from the example I gave above, slides down and over the content the user was just looking at, it provides affirmation for the user.</p>
 		</div>
 		<div class="row">
-			<div class="col-4">
-				<object type="image/svg+xml" data="./img/4k.svg" id="object" class="icon"></object>
+			<div class="col-md-4 services__element">
+				<object type="image/svg+xml" data="./img/4k.svg" class="icon"></object>
 				<h6 class="services__name">4k resolution</h6>
 				<p class="services__text">More specifically, microinteractions are the animations and changes of the interface that happen once a user interacts with something, anything. Consider them interactive but informative animations. There are many reasons to use microinteractions. I can give you four right now.</p>
 			</div>
-			<div class="col-4">
-				<object type="image/svg+xml" data="./img/hourglass.svg" id="object" class="icon"></object>
+			<div class="col-md-4 services__element">
+				<object type="image/svg+xml" data="./img/hourglass.svg" class="icon"></object>
 				<h6 class="services__name">timelapse</h6>
 				<p class="services__text">More specifically, microinteractions are the animations and changes of the interface that happen once a user interacts with something, anything. Consider them interactive but informative animations. There are many reasons to use microinteractions. I can give you four right now.</p>
 			</div>
-			<div class="col-4">
-				<object type="image/svg+xml" data="./img/speed.svg" id="object" class="icon"></object>
+			<div class="col-md-4 services__element">
+				<object type="image/svg+xml" data="./img/speed.svg" class="icon"></object>
 				<h6 class="services__name">super speed</h6>
 				<p class="services__text">More specifically, microinteractions are the animations and changes of the interface that happen once a user interacts with something, anything. Consider them interactive but informative animations. There are many reasons to use microinteractions. I can give you four right now.</p>
 			</div>
@@ -114,8 +118,8 @@
 			<p class="chars__subtitle">The V.360° Camera allows you to masterfully capture the whole story with a premium 360° camera for limitless creating.</p>
 		</div>
 		<div class="row">
-			<div class="col-5"></div>
-			<div class="col-3">
+			<div class="col-md-5"></div>
+			<div class="col-md-3">
 				
 				<ul class="chars__list">
 					
@@ -151,7 +155,7 @@
 				
 				</ul>
 			</div>
-			<div class="col-4">
+			<div class="col-md-4">
 				
 				<ul class="chars__list">
 					
@@ -196,7 +200,7 @@
 			<h3 class="slider__title">Mount to anything. Anywhere.</h3>
 			<p class="slider__subtitle">Fully compatible with GoPro® mounts, traditional cameras and tripod designs with a built in ¼ – 20 UNC tripod housing, we’re made to mount anything. From helmets to handlebars, we go where you go.</p>
 		</div>
-		<div class="owl-carousel">
+		<div class="carousel owl-carousel">
 			<div class="slider__wrapper"><img src="./img/drone-slide1.jpg" alt="drone"></div>
 			<div class="slider__wrapper"><img src="./img/drone-slide2.jpg" alt="drone"></div>
 			<div class="slider__wrapper"><img src="./img/drone-slide3.jpg" alt="drone"></div>
@@ -214,10 +218,278 @@
 		<div class="row" id="productsGrid"></div>
 	</div>
 </section>
+<section class="contacts">
+	<div class="container">
+		<div class="row contacts__content">
+			<div class="col-md-6">
+				<form class="contacts__form">
+					<h3 class="contacts__form-header">contact us</h3>
+					<input type="text" class="contacts__form-text" placeholder="Your Name…" required>
+					<input type="text" class="contacts__form-text" placeholder="Your E-mail…" required>
+					<textarea class="contacts__form-textarea" placeholder="Your Message…" name="textarea" id="textarea" cols="30" rows="10" required></textarea>
+					<button type="submit" class="contacts__form-submit header__link">submit</button>
+				</form>
+			</div>
+			<div id="map" class="contacts__map col-md-6">
+				<script>
+					var map;
+					var mapStyles = [
+					{
+						"elementType": "geometry",
+						"stylers": [
+						{
+							"color": "#1d2c4d"
+						}
+						]
+					},
+					{
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+							"color": "#8ec3b9"
+						}
+						]
+					},
+					{
+						"elementType": "labels.text.stroke",
+						"stylers": [
+						{
+							"color": "#1a3646"
+						}
+						]
+					},
+					{
+						"featureType": "administrative.country",
+						"elementType": "geometry.stroke",
+						"stylers": [
+						{
+							"color": "#4b6878"
+						}
+						]
+					},
+					{
+						"featureType": "administrative.land_parcel",
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+							"color": "#64779e"
+						}
+						]
+					},
+					{
+						"featureType": "administrative.province",
+						"elementType": "geometry.stroke",
+						"stylers": [
+						{
+							"color": "#4b6878"
+						}
+						]
+					},
+					{
+						"featureType": "landscape.man_made",
+						"elementType": "geometry.stroke",
+						"stylers": [
+						{
+							"color": "#334e87"
+						}
+						]
+					},
+					{
+						"featureType": "landscape.natural",
+						"elementType": "geometry",
+						"stylers": [
+						{
+							"color": "#023e58"
+						}
+						]
+					},
+					{
+						"featureType": "poi",
+						"elementType": "geometry",
+						"stylers": [
+						{
+							"color": "#283d6a"
+						}
+						]
+					},
+					{
+						"featureType": "poi",
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+							"color": "#6f9ba5"
+						}
+						]
+					},
+					{
+						"featureType": "poi",
+						"elementType": "labels.text.stroke",
+						"stylers": [
+						{
+							"color": "#1d2c4d"
+						}
+						]
+					},
+					{
+						"featureType": "poi.park",
+						"elementType": "geometry.fill",
+						"stylers": [
+						{
+							"color": "#023e58"
+						}
+						]
+					},
+					{
+						"featureType": "poi.park",
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+							"color": "#3C7680"
+						}
+						]
+					},
+					{
+						"featureType": "road",
+						"elementType": "geometry",
+						"stylers": [
+						{
+							"color": "#304a7d"
+						}
+						]
+					},
+					{
+						"featureType": "road",
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+							"color": "#98a5be"
+						}
+						]
+					},
+					{
+						"featureType": "road",
+						"elementType": "labels.text.stroke",
+						"stylers": [
+						{
+							"color": "#1d2c4d"
+						}
+						]
+					},
+					{
+						"featureType": "road.highway",
+						"elementType": "geometry",
+						"stylers": [
+						{
+							"color": "#2c6675"
+						}
+						]
+					},
+					{
+						"featureType": "road.highway",
+						"elementType": "geometry.stroke",
+						"stylers": [
+						{
+							"color": "#255763"
+						}
+						]
+					},
+					{
+						"featureType": "road.highway",
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+							"color": "#b0d5ce"
+						}
+						]
+					},
+					{
+						"featureType": "road.highway",
+						"elementType": "labels.text.stroke",
+						"stylers": [
+						{
+							"color": "#023e58"
+						}
+						]
+					},
+					{
+						"featureType": "transit",
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+							"color": "#98a5be"
+						}
+						]
+					},
+					{
+						"featureType": "transit",
+						"elementType": "labels.text.stroke",
+						"stylers": [
+						{
+							"color": "#1d2c4d"
+						}
+						]
+					},
+					{
+						"featureType": "transit.line",
+						"elementType": "geometry.fill",
+						"stylers": [
+						{
+							"color": "#283d6a"
+						}
+						]
+					},
+					{
+						"featureType": "transit.station",
+						"elementType": "geometry",
+						"stylers": [
+						{
+							"color": "#3a4762"
+						}
+						]
+					},
+					{
+						"featureType": "water",
+						"elementType": "geometry",
+						"stylers": [
+						{
+							"color": "#0e1626"
+						}
+						]
+					},
+					{
+						"featureType": "water",
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+							"color": "#4e6d70"
+						}
+						]
+					}
+					];
+					function initMap() {
+						const superdrone = {lat: 32.660759, lng: 35.106139};
+						map = new google.maps.Map(document.getElementById('map'), {
+							center: superdrone,
+							zoom: 18,
+							styles: mapStyles
+						});
+						var marker = new google.maps.Marker({
+							position: superdrone,
+							map: map,
+							icon: 'http://maps.google.com/mapfiles/kml/paddle/red-stars.png'
+						});
+					}
+				</script>
+				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcKjdw8NgkHm-KrpJ_8TeiJaomaJ9wynQ&callback=initMap"
+				async defer></script>
+			</div>
+		</div>
+	</div>
+</section>
 <footer class="footer" id="footer">
 	<div class="container">
 		<div class="row">
-			<div class="col-5">
+			<div class="col-md-5">
 				<ul class="footer__legal">
 					<li class="footer__legal-item">
 						<a href="#" class="footer__legal-link">Terms & conditions</a>
@@ -230,8 +502,8 @@
 					</li>
 				</ul>
 			</div>
-			<div class="col-4"></div>
-			<div class="col-3">
+			<div class="col-md-4"></div>
+			<div class="col-md-3">
 				<ul class="footer__social">
 					<li class="footer__social-item">
 						<a href="#" target="_blank" class="footer__social-link"><i class="fab fa-twitter"></i></a>
@@ -249,7 +521,7 @@
 			</div>
 		</div>
 		<div class="row footer__contacts">
-			<address class="footer__contacts-address">3 Hatamat Str., P.O.Box 35 2068201,<br>Yoqneam littl, Israel</address>
+			<address class="footer__contacts-address">3 Ha-Tamar Str., P.O.Box 35 2068201,<br>Yokneam Illit, Israel</address>
 			<a href="mailto:info@gmail.com" class="footer__contacts-email">info@gmail.com</a>
 			<a href="tel:+1-800-123-456" class="footer__contacts-phone">+1-800-123-456</a>
 		</div>
@@ -260,6 +532,9 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/3104291314.js" crossorigin="anonymous"></script>
-<script src="owlcarousel/owl.carousel.min.js"></script>
+<!-- <script src="./assets/libs/owlcarousel/owl.carousel.min.js"></script> -->
+<script type="text/javascript" src="./assets/libs/slick/slick.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 </body>
 </html>
