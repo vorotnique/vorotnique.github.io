@@ -137,6 +137,9 @@
 		@include xs-screen {
 			display: none;
 		}
+		@include sm-screen {
+			display: none;
+		}
 	}
 
 	&__scroll {
@@ -204,3 +207,4 @@
 	z-index: 3;
 	background: url('../img/icon_top.png') no-repeat;
 }
+
