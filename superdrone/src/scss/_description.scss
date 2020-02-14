@@ -3,11 +3,14 @@
 	padding: px_to_rem(20px) 0;
 	border-bottom: 1px solid $gray-text;
 	@include md-screen {
-		padding: px_to_rem(160px) 0;
+		padding: px_to_rem(60px) 0;
 		background-image: url(../img/drone.png);
 		background-repeat: no-repeat;
 		background-position: 150% 50%;
 		background-size: 60%;
+	}
+	@include xl-screen {
+		padding: px_to_rem(160px) 0;
 	}
 
 	&__header {
@@ -16,6 +19,10 @@
 		font-size: px_to_rem(28px);
 		margin-bottom: px_to_rem(25px);
 		@include md-screen {
+			font-size: px_to_rem(32px);
+			margin-bottom: px_to_rem(30px);
+		}
+		@include xl-screen {
 			font-size: px_to_rem(50px);
 			margin-bottom: px_to_rem(45px);
 		}
@@ -27,6 +34,10 @@
 		color: $gray-text;
 		margin-bottom: px_to_rem(20px);
 		@include md-screen {
+			font-size: px_to_rem(20px);
+			margin-bottom: px_to_rem(25px);
+		}
+		@include xl-screen {
 			font-size: px_to_rem(24px);
 			margin-bottom: px_to_rem(45px);
 		}

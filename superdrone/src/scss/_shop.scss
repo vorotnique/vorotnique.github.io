@@ -3,6 +3,9 @@
 	padding: px_to_rem(20px) 0 px_to_rem(15px);
 	border-bottom: 1px solid $gray-text;
 	@include md-screen {
+		padding: px_to_rem(50px) 0 px_to_rem(35px);
+	}
+	@include xl-screen {
 		padding: px_to_rem(140px) 0 px_to_rem(100px);
 	}
 
@@ -34,8 +37,11 @@
 			text-align: center;
 		}
 		@include md-screen {
-			padding: px_to_rem(15px) 0 px_to_rem(90px);
+			padding: px_to_rem(15px) 0 px_to_rem(30px);
 			font-size: px_to_rem(18px);
+		}
+		@include lg-screen {
+			padding: px_to_rem(15px) 0 px_to_rem(90px);
 		}
 	}
 }

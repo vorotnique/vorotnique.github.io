@@ -2,6 +2,9 @@
 	background-color: $gray-bg;
 	padding: px_to_rem(10px) 0;
 	@include md-screen {
+		padding: px_to_rem(20px) 0;
+	}
+	@include xl-screen {
 		padding: px_to_rem(75px) 0;
 	}
 
@@ -46,6 +49,9 @@
 			flex-direction: column;
 		}
 		@include md-screen {
+			padding: px_to_rem(45px) 0;
+		}
+		@include xl-screen {
 			padding: px_to_rem(90px) 0;
 		}
 	}

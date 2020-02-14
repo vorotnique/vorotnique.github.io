@@ -6,6 +6,9 @@
 		background-repeat: no-repeat;
 		background-position: -50% 50%;
 		background-size: 60%;
+		padding: px_to_rem(50px) 0;
+	}
+	@include xl-screen {
 		padding: px_to_rem(140px) 0;
 	}
 
@@ -15,6 +18,9 @@
 		font-size: px_to_rem(24px);
 		text-align: center;
 		@include md-screen {
+			font-size: px_to_rem(32px);
+		}
+		@include lg-screen {
 			font-size: px_to_rem(40px);
 		}
 	}
@@ -25,11 +31,12 @@
 		font-size: px_to_rem(16px);
 		margin: 0 auto;
 		padding: px_to_rem(15px) 0;
-		@include xs-screen {
-			text-align: center;
-		}
+		text-align: center;
 		@include md-screen {
 			font-size: px_to_rem(18px);
+			padding: px_to_rem(15px) 0 px_to_rem(30px);
+		}
+		@include lg-screen {
 			padding: px_to_rem(15px) 0 px_to_rem(90px);
 		}
 	}
@@ -52,6 +59,11 @@
 		}
 		@include md-screen {
 			&:not(:last-child) {
+				margin-bottom: px_to_rem(25px);
+			}
+		}
+		@include xl-screen {
+			&:not(:last-child) {
 				margin-bottom: px_to_rem(50px);
 			}
 		}
@@ -60,12 +72,18 @@
 	&__list-definition {
 		text-transform: uppercase;
 		font-weight: 700;
-		font-size: px_to_rem(24px);
+		font-size: px_to_rem(17px);
+		@include lg-screen {
+			font-size: px_to_rem(24px);
+		}
 	}
 
 	&__list-parameter {
 		color: $gray-text;
 		font-weight: 400;
-		font-size: px_to_rem(14px);
+		font-size: px_to_rem(11px);
+		@include lg-screen {
+			font-size: px_to_rem(14px);
+		}
 	}
 }

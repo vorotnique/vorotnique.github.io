@@ -3,6 +3,9 @@
 	padding: px_to_rem(20px) 0;
 	border-bottom: 1px solid $gray-text;
 	@include md-screen {
+		padding: px_to_rem(50px) 0;
+	}
+	@include xl-screen {
 		padding: px_to_rem(110px) 0;
 	}
 
@@ -12,6 +15,9 @@
 		font-size: px_to_rem(28px);
 		margin: 0 auto;
 		@include md-screen {
+			font-size: px_to_rem(36px);
+		}
+		@include xl-screen {
 			font-size: px_to_rem(50px);
 		}
 	}
@@ -23,6 +29,9 @@
 		text-align: center;
 		padding: px_to_rem(15px) 0;
 		@include md-screen {
+			padding: px_to_rem(15px) 0 px_to_rem(30px);
+		}
+		@include xl-screen {
 			padding: px_to_rem(15px) 0 px_to_rem(90px);
 		}
 	}
@@ -41,7 +50,7 @@
 		font-weight: 700;
 		font-size: px_to_rem(24px);
 		padding: px_to_rem(10px) 0;
-		@include md-screen {
+		@include lg-screen {
 			font-size: px_to_rem(30px);
 			padding: px_to_rem(20px) 0;
 		}

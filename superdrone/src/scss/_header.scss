@@ -11,6 +11,9 @@
 		padding: 15px 0;
 		height: 100vh;
 		@include md-screen {
+			padding: 30px 0;
+		}
+		@include lg-screen {
 			padding: 60px 0;
 		}
 	}
@@ -20,6 +23,10 @@
 		text-transform: uppercase;
 		font-size: px_to_rem(24px);
 		@include md-screen {
+			transform: translateX(-1.5rem);
+			font-size: px_to_rem(28px);
+		}
+		@include xl-screen {
 			transform: translateX(-4rem);
 			font-size: px_to_rem(36px);
 		}
@@ -40,7 +47,7 @@
 		justify-content: space-between;
 		align-items: center;
 		list-style: none;
-		@include md-screen {
+		@include lg-screen {
 			display: flex;
 		}
 	}
@@ -48,8 +55,14 @@
 	&__nav-link {
 		color: $white;
 		text-transform: uppercase;
-		font-size: px_to_rem(18px);
+		font-size: px_to_rem(11px);
 		position: relative;
+		@include lg-screen {
+			font-size: px_to_rem(15px);
+		}
+		@include xl-screen {
+			font-size: px_to_rem(18px);
+		}
 
 		&::after {
 			content: "";
@@ -76,9 +89,12 @@
 	&__cart {
 		background: none;
 		border: none;
-		transform: translateX(-1rem);
+		transform: translateX(-0.5rem);
 		@include md-screen {
 			transform: translateX(2rem);
+		}
+		@include lg-screen-only {
+			transform: translateX(-1rem);
 		}
 	}
 
@@ -112,6 +128,12 @@
 		text-align: center;
 		width: 100%;
 		@include md-screen {
+			font-size: px_to_rem(56px);
+		}
+		@include lg-screen {
+			font-size: px_to_rem(70px);
+		}
+		@include xl-screen {
 			font-size: px_to_rem(100px);
 		}
 	}
@@ -133,12 +155,11 @@
 	}
 
 	.shifted {
-		transform: translateX(4rem);
-		@include xs-screen {
+		@include md-screen-max {
 			display: none;
 		}
-		@include sm-screen {
-			display: none;
+		@include xl-screen {
+			transform: translateX(2.5rem);
 		}
 	}
 
@@ -170,6 +191,9 @@
 	background: none;
 	border: none;
 	padding: 20px;
+	@include xs-screen {
+		font-size: 1.5rem;
+	}
 
 	&:focus {
 		outline: 2px dotted $color;

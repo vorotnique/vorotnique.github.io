@@ -2,6 +2,9 @@
 	background-color: $white;
 	padding: px_to_rem(15px) 0;
 	@include md-screen {
+		padding: px_to_rem(50px) 0;
+	}
+	@include xl-screen {
 		padding: px_to_rem(140px) 0;
 	}
 
