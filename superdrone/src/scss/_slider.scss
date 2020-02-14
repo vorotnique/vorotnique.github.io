@@ -36,3 +36,7 @@
 		@include padding-hack(300px);
 	}
 }
+
+.slick-arrow {
+	filter: invert(100%);
+}
