@@ -1,0 +1,54 @@
+.sh-about {
+
+	&__carousel {
+		display: flex;
+		flex-direction: column;
+
+		@include lg-screen {
+			flex-direction: row;
+		}
+	}
+
+}
+
+.side {
+
+	flex-basis: 100%;
+
+	@include lg-screen {
+		flex-basis: 50%;
+	}
+}
+
+.img-wrapper {
+	$xs-height: 330px;
+	$md-height: 485px;
+
+	position: relative;
+	width: 100%;
+	max-width: 390px;
+	margin-bottom: 20px;
+	@include padding-hack($xs-height);
+
+	@include lg-screen {
+		@include padding-hack($md-height);
+		margin-bottom: 40px;
+	}
+
+	&::before {
+		content: "";
+		width: 100%;
+		max-width: 470px;
+		height: $xs-height;
+		position: absolute;
+		background-color: $grey-bg;
+		z-index: 0;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		@include lg-screen {
+			height: $md-height;
+		}
+	}
+}

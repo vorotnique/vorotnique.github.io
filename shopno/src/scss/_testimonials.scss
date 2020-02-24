@@ -1,0 +1,54 @@
+.sh-testimonials {
+
+	.sh-carousel__caption {
+		position: relative;
+	}
+
+	.img-wrapper > img {
+		object-fit: contain;
+	}
+
+	.mate-wrapper {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+
+		@include lg-screen {
+			transform: translateY(-47%);
+			top: 50%;
+		}
+	}
+
+	.sh-team__mate {
+		position: initial;
+		opacity: 1;
+		background-color: $light-grey;
+		transform: initial;
+		top: initial;
+		left: initial;
+		max-width: initial;
+		height: 410px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 2rem;
+
+		&::before {
+			content: none;
+		}
+	}
+
+	.sh-team__mate-description {
+		text-align: center;
+	}
+
+	.sh-carousel__controls {
+		display: none;
+		align-self: flex-end;
+
+		@include lg-screen {
+			display: inline-flex;
+		}
+	}
+}

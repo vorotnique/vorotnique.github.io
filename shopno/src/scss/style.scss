@@ -1,0 +1,38 @@
+@import "vars";
+@import "mixins";
+@import "sprite";
+
+@import "common";
+
+@import "first-screen";
+@import "about";
+@import "works";
+@import "services";
+@import "team";
+@import "testimonials";
+@import "partners";
+@import "contacts";
+@import "footer";
+
+// DELETE THIS ON PRODUCTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+html {
+	@include media-hidden;
+}
+
+.sh-first-screen,
+.sh-about,
+.sh-works,
+.sh-services,
+.sh-team,
+.sh-testimonials,
+.sh-partners,
+.sh-contacts,
+.sh-footer
+{
+	// display: none;
+}
+
+.sh-testimonials {
+	// display: block;
+}
