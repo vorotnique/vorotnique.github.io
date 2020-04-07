@@ -1,0 +1,68 @@
+.first-screen {
+	background-color: $bg-dark;
+	height: 100vh;
+}
+
+.header {
+	height: 100%;
+	background-image: url(../img/sns_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&__title {
+		font-weight: 700;
+		font-size: px_to_rem(48px);
+
+		@include xxl-screen {
+			font-size: px_to_rem(64px);
+		}
+	}
+
+	&__subtitle {
+		font-size: px_to_rem(12px);
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: space-around;
+	}
+
+	&__row {
+		width: 100%;
+		height: 100%;
+		padding-left: 90px;
+		background: linear-gradient(to right, rgba(0,0,0,255) 0%, rgba(0,0,0,0) 75%);
+	}
+
+	&__link {
+		display: block;
+		color: $text-white;
+		position: relative;
+		padding: 20px;
+		border: 2px solid $pink;
+		border-radius: 50px;
+		transition: $transition;
+		text-align: center;
+		&:hover {
+			color: $text-white;
+			text-decoration: none;
+			background-color: $pink;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			left: 22px;
+			border: 12px solid transparent;
+			border-left: 12px solid $yellow;
+		}
+	}
+}
+
+.logo {
+	width: 100%;
+	max-width: 25%;
+	height: 100%;
+	max-height: 25%;
+}
