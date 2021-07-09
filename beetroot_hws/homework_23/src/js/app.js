@@ -1,11 +1,11 @@
-// •1•
+// •1• Запросить у пользователя его возраст и определить, кем он является: ребенком (0–2), подростком (12–18), взрослым (18_60) или пенсионером (60– ...).
 let ageBtn = document.querySelector('#age__button');
 ageBtn.addEventListener('click', function () {
   let age = document.querySelector('#age').value;
   let ageName = age < 0 ? 'ещё не родились' : age < 20 ? 'зумер' : age < 40 ? 'миллениал' : age < 60 ? 'эксер' : 'бумер';
   document.querySelector('#age__out').textContent = "Вы - " + ageName + ".";
 });
-// •2•
+// •2• Запросить у пользователя число от 0 до 9 и вывести ему спецсимвол, который расположен на этой клавише (1–!, 2–@, 3–# и т. д).
 
 let specialBtn = document.querySelector('#special__button');
 specialBtn.addEventListener('click', function () {
@@ -59,7 +59,7 @@ specialBtn.addEventListener('click', function () {
 
   document.querySelector('#special__out').textContent = "Этой цифре на клавиатуре отвечает следующий спецсимвол - " + specialSymbol;
 });
-// •3•
+// •3• Запросить у пользователя трехзначное число и проверить, есть ли в нем одинаковые цифры.
 
 let tripleBtn = document.querySelector('#triple__button');
 tripleBtn.addEventListener('click', function () {
@@ -74,7 +74,7 @@ tripleBtn.addEventListener('click', function () {
     }
   }
 });
-// •4•
+// •4• Запросить у пользователя год и проверить, високосный он или нет. Високосный год либо кратен 400, либо кратен 4 и при этом не кратен 100.
 
 let yearBtn = document.querySelector('#year__button');
 yearBtn.addEventListener('click', function () {
@@ -86,7 +86,7 @@ yearBtn.addEventListener('click', function () {
     document.querySelector('#year__out').textContent = 'Невисокосный год';
   }
 });
-// •5•
+// •5• Запросить у пользователя пятиразрядное число и определить, является ли оно палиндромом.
 
 let palindromBtn = document.querySelector('#palindrom__button');
 palindromBtn.addEventListener('click', function () {
@@ -99,7 +99,7 @@ palindromBtn.addEventListener('click', function () {
     document.querySelector('#palindrom__out').textContent = 'Число является не палиндромом';
   }
 });
-// •6•
+// •6• Написать конвертор валют. Пользователь вводит количество USD, выбирает, в какую валюту хочет перевести EUR, UAN или AZN, и получает в ответ соответствующую сумму.
 
 let moneyBtn = document.querySelector('#money__button');
 moneyBtn.addEventListener('click', function () {
@@ -117,7 +117,7 @@ moneyBtn.addEventListener('click', function () {
 
   document.querySelector('#money__out').textContent = "Результат: ".concat((moneySum * exchangeRate) + " " + currency);
 });
-// •7•
+// •7• Запросить у пользователя сумму покупки и вывести сумму к оплате со скидкой: от 200 до 300 – скидка будет 3%, от 300 до 500 – 5%, от 500 и выше – 7%.
 
 let sumBtn = document.querySelector('#sum__button');
 sumBtn.addEventListener('click', function () {
@@ -126,7 +126,7 @@ sumBtn.addEventListener('click', function () {
   document.querySelector('#discount__out').textContent = "Ваша скидка: ".concat(discount, " %.");
   document.querySelector('#sum__out').textContent = "Сумма к оплате: ".concat((sum * ((100 - discount) / 100)).toFixed(2), " грн.");
 });
-// •8•
+// •8• Запросить у пользователя длину окружности и периметр квадрата. Определить, может ли такая окружность поместиться в указанный квадрат.
 
 let figureBtn = document.querySelector('#figure__button');
 figureBtn.addEventListener('click', function () {
@@ -140,7 +140,7 @@ figureBtn.addEventListener('click', function () {
     document.querySelector('#figure__out').textContent = "Окружность слишком большая.";
   }
 });
-// •9•
+// •9• Задать пользователю 3 вопроса, в каждом вопросе по 3 варианта ответа. За каждый правильный ответ начисляется 2 балла. После вопросов выведите пользователю количество набранных баллов.
 
 let questionBtn = document.querySelector('#question__button');
 questionBtn.addEventListener('click', function () {
@@ -169,7 +169,7 @@ questionBtn.addEventListener('click', function () {
 
   document.querySelector('#question__out').textContent = "Оценка: ".concat(questionResult, " балла.");
 });
-// •10•
+// •10• Запросить дату (день, месяц, год) и вывести следующую за ней дату. Учтите возможность перехода на следующий месяц, год, а также високосный год.
 
 let dateBtn = document.querySelector('#date__button');
 dateBtn.addEventListener('click', function () {
